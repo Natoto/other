@@ -1,6 +1,6 @@
 
 // defineClass(“类名”, {实例方法:jsFunction, 实例方法:jsFunction, ...}, {类方法:jsFunction, 类方法:jsFunction, ...});
-defineClass('JPViewController',
+defineClass('RootViewController',
     {
         viewDidLoad: function() {
 
