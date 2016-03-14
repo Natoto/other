@@ -1,0 +1,21 @@
+
+服务器
+https://pay.yy.com:443
+
+验证码
+
+http://lgreport.yy.com
+msg={"platform":"Android","deviceid":"ffffffff-817e-a92f-5ca3-a22f0033c587","model":"Lenovo A3500","screen":"480x854","board":"msm8916","cpuabi":"armeabi-v7a","kernel":"3.10.28-gbd704db-00043-gd1cd03a","osversion":"19","sdkversion":"mob_and_sdk_4.2.2b","appversion":"com.yy.huanjubao.app(1.0.3-SNAPSHOT)","appid":"5151","uri":"socketconnect_dns","cli_ver":"mob_and_sdk_4.2.2b","udb_ver":"4.2.2b","linkid":"1457506599427","sendtime":"1457506599432","revtime":"1457506599489","uid":"","passport":"15920549038","logintype":"-1","statictype":"-1","dtype":"-1","rescode":"success","reason":"","clientip":"fe80::62d9:a0ff:fe33:98%wlan0","serverip":"121.14.39.209","networktype":"1|WIFI"}
+
+
+{"platform":"Android","status":"0success","clientip":"fe80::62d9:a0ff:fe33:98%wlan0","appversion":"com.yy.huanjubao.app(1.0.3-SNAPSHOT)","yyuid":"1481094470","ms0":"7EED8EC8C14E69184E0DC2BE023B3DB799E8608EB4F68EF4ABC619E3C6C7B67FA45C1604A1E7CF4E7AD777F0BD734308","networktype":"1|WIFI","osversion":19,"response":"LoginAck2 [context=UdbLoginReq2, resCode=0, reason=success, description=, yyuid=1481094470, dynamicTokenReqs=[], picId=, picData=[], loginData=LoginDataAck [yyid=1658053740, udbuid=1501455514, passport=1658053740yy, accessToken=7EED8EC8C14E69184E0DC2BE023B3DB799E8608EB4F68EF4ABC619E3C6C7B67FA45C1604A1E7CF4E7AD777F0BD734308, accountInfo=DAAxNjU4MDUzNzQweXknyd9WBHQAcmjudZKle5q3I4WW5PkfcoMJCFiealvDl9zVWPafG8XXu4hjbUJDoDRjaTgHUZtwEHNx2_r8X2tO3jfxKEn2lphux0-LJQH_xyCPEaS2IucCrvRx6qI9plLyy__XiuOmH6l6vk6Ipur2-iUSl-j4-u7yww4AAAAAAwAAAAAAAAANADExMy42NC40Ny4xNTUEADUxNTE=, jumpTokens=[], ticket=[], yyCookie=[], cookie={\"cookie\":{\"username\":\"1658053740yy\",\"password\":\"303D7F3738CD5EA912001DD2FCAEC3904839437B\",\"osinfo\":\"linux\",\"yyuid\":\"1481094470\",\"oauthCookie\":\"6AEAB93DF51AF2574FA95E8DF29FE7E4D36C250A3E082FB516D353656E9CF0605EEE33E0700550B376E5CFF2FDBB06C69A0FEA96AA9DF371E71762C5D7FCA7EDDBC0FCD15D00A8AE088E9FFE73A825A0B99CEAC90AD3B705BAF3E76B9A08900EC7DB4C4B8053A005B97892589336D951A6C7E91AE937E285690AEECE3FF135B4AAB3A4DE07BF065282C27C90E689DA1EF1B3F46689368D217810D6F23B009AC370283AEC432FDEDFE996685AAB9850CF71CD2A6EFABA7EA7F0A574DE6A37E2A6055B15D4043C65F5854D9314248A543696DA006E00FB41C1FBCD9272CC07EEA9B82258E14394E1DF8BC7D8B1AA33162B\"}}], callbackData=1481094470_1457506599, extension=]","request":"UdbLoginReq2 [xxTeaHead=4214c354df72c1f0d0b5cd221eb5aca6, TAG=UdbLoginReq2, context=UdbLoginReq2, appId=5151, appType=2, lcid=2052, terminalType=0, deviceId=ffffffff-817e-a92f-5ca3-a22f0033c587, clientIp=fe80::62d9:a0ff:fe33:98%wlan0, sdkVerInt=1, sdkVerStr=mob_and_sdk_4.2.2b, protocolVer=V4.0.0, yyuid=0, user=15920549038, userTokenType=1, userToken=4875616E6730393133, picId=, picCode=, dynamicTokenType=0, dynamicToken=null, vmToken=null, jumpAppIds=[], jumpSessionIds=[], callbackData=1429140598_1457506572, extension=, ticket=null]","sdkversion":"mob_and_sdk_4.2.2b","cli_ver":"mob_and_sdk_4.2.2b","passport":"15920549038","udb_ver":"4.2.2b","env_info":"LoginWithPassword"}
+
+
+
+https://recharge.yy.com:443
+
+
+
+//podfile 的写法
+http://guides.cocoapods.org/using/the-podfile.html
+

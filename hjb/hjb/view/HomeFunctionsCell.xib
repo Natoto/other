@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeFunctionsCell">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkw-wg-iD7" userLabel="View1" customClass="HBButton">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="97"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzZ-VV-O6Y" customClass="HBButton">
+                        <rect key="frame" x="86" y="0.0" width="84" height="97"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rG-ua-oI2" customClass="HBButton">
+                        <rect key="frame" x="171" y="0.0" width="85" height="97"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-XC-zYE" customClass="HBButton">
+                        <rect key="frame" x="257" y="0.0" width="84" height="97"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ct9-yv-ea1" userLabel="View1" customClass="HBButton">
+                        <rect key="frame" x="0.0" y="98" width="85" height="96"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-Pl-3WD" customClass="HBButton">
+                        <rect key="frame" x="86" y="98" width="84" height="96"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAQ-f8-n4z" customClass="HBButton">
+                        <rect key="frame" x="171" y="98" width="85" height="96"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9u-5Z-YZe" customClass="HBButton">
+                        <rect key="frame" x="257" y="98" width="84" height="96"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="5QJ-XC-zYE" secondAttribute="trailing" constant="-8" id="1j7-0H-vcB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ct9-yv-ea1" secondAttribute="bottom" constant="-8" id="2Fu-3Y-wzG"/>
+                    <constraint firstItem="rkw-wg-iD7" firstAttribute="height" secondItem="ct9-yv-ea1" secondAttribute="height" id="2Ve-sK-2rl"/>
+                    <constraint firstItem="MzZ-VV-O6Y" firstAttribute="top" secondItem="rkw-wg-iD7" secondAttribute="top" id="3X6-4C-M3G"/>
+                    <constraint firstItem="kvO-Pl-3WD" firstAttribute="leading" secondItem="ct9-yv-ea1" secondAttribute="trailing" constant="1" id="4cw-7l-ays"/>
+                    <constraint firstItem="3rG-ua-oI2" firstAttribute="top" secondItem="MzZ-VV-O6Y" secondAttribute="top" id="78q-tQ-fwF"/>
+                    <constraint firstItem="rkw-wg-iD7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="94S-go-hWM"/>
+                    <constraint firstItem="rkw-wg-iD7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Dsa-Fe-rRd"/>
+                    <constraint firstItem="ct9-yv-ea1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Dzh-Tl-RGY"/>
+                    <constraint firstItem="kvO-Pl-3WD" firstAttribute="height" secondItem="ct9-yv-ea1" secondAttribute="height" id="IfZ-mn-sAW"/>
+                    <constraint firstItem="iAQ-f8-n4z" firstAttribute="height" secondItem="kvO-Pl-3WD" secondAttribute="height" id="M1A-0X-0cZ"/>
+                    <constraint firstItem="MzZ-VV-O6Y" firstAttribute="leading" secondItem="rkw-wg-iD7" secondAttribute="trailing" constant="1" id="QW9-xe-wNI"/>
+                    <constraint firstItem="V9u-5Z-YZe" firstAttribute="leading" secondItem="iAQ-f8-n4z" secondAttribute="trailing" constant="1" id="STi-Ol-x8s"/>
+                    <constraint firstItem="iAQ-f8-n4z" firstAttribute="top" secondItem="kvO-Pl-3WD" secondAttribute="top" id="UKL-sp-rEl"/>
+                    <constraint firstItem="V9u-5Z-YZe" firstAttribute="top" secondItem="iAQ-f8-n4z" secondAttribute="top" id="Vt1-rr-AW0"/>
+                    <constraint firstItem="iAQ-f8-n4z" firstAttribute="leading" secondItem="kvO-Pl-3WD" secondAttribute="trailing" constant="1" id="X0Z-a9-TRW"/>
+                    <constraint firstItem="V9u-5Z-YZe" firstAttribute="height" secondItem="iAQ-f8-n4z" secondAttribute="height" id="XYP-mz-VHY"/>
+                    <constraint firstItem="kvO-Pl-3WD" firstAttribute="width" secondItem="ct9-yv-ea1" secondAttribute="width" id="YM1-s1-OWp"/>
+                    <constraint firstItem="3rG-ua-oI2" firstAttribute="leading" secondItem="MzZ-VV-O6Y" secondAttribute="trailing" constant="1" id="aqh-fl-KV0"/>
+                    <constraint firstItem="kvO-Pl-3WD" firstAttribute="top" secondItem="ct9-yv-ea1" secondAttribute="top" id="bgZ-K6-78c"/>
+                    <constraint firstItem="ct9-yv-ea1" firstAttribute="top" secondItem="rkw-wg-iD7" secondAttribute="bottom" constant="1" id="eMr-j8-2Gk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="V9u-5Z-YZe" secondAttribute="trailing" constant="-8" id="ea6-SN-06n"/>
+                    <constraint firstItem="MzZ-VV-O6Y" firstAttribute="height" secondItem="rkw-wg-iD7" secondAttribute="height" id="fe3-7g-5u7"/>
+                    <constraint firstItem="V9u-5Z-YZe" firstAttribute="width" secondItem="iAQ-f8-n4z" secondAttribute="width" id="g6d-p9-buE"/>
+                    <constraint firstItem="5QJ-XC-zYE" firstAttribute="leading" secondItem="3rG-ua-oI2" secondAttribute="trailing" constant="1" id="gVD-fr-Rj7"/>
+                    <constraint firstItem="3rG-ua-oI2" firstAttribute="height" secondItem="MzZ-VV-O6Y" secondAttribute="height" id="hAd-rS-XVI"/>
+                    <constraint firstItem="5QJ-XC-zYE" firstAttribute="top" secondItem="3rG-ua-oI2" secondAttribute="top" id="hN8-W4-fPk"/>
+                    <constraint firstItem="iAQ-f8-n4z" firstAttribute="width" secondItem="kvO-Pl-3WD" secondAttribute="width" id="iX9-CL-Luc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="V9u-5Z-YZe" secondAttribute="bottom" constant="-8" id="izB-iw-Szf"/>
+                    <constraint firstItem="3rG-ua-oI2" firstAttribute="width" secondItem="MzZ-VV-O6Y" secondAttribute="width" id="oiR-eW-8Xt"/>
+                    <constraint firstItem="5QJ-XC-zYE" firstAttribute="height" secondItem="3rG-ua-oI2" secondAttribute="height" id="q2K-10-d2L"/>
+                    <constraint firstItem="MzZ-VV-O6Y" firstAttribute="width" secondItem="rkw-wg-iD7" secondAttribute="width" id="vDj-Cj-bDz"/>
+                    <constraint firstItem="5QJ-XC-zYE" firstAttribute="width" secondItem="3rG-ua-oI2" secondAttribute="width" id="yLD-wx-8tD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="btn_1" destination="rkw-wg-iD7" id="RRz-jp-03L"/>
+                <outlet property="btn_2" destination="MzZ-VV-O6Y" id="gVb-Dy-LPY"/>
+                <outlet property="btn_3" destination="3rG-ua-oI2" id="9Aj-g9-ZRh"/>
+                <outlet property="btn_4" destination="5QJ-XC-zYE" id="rql-XX-Vco"/>
+                <outlet property="btn_5" destination="ct9-yv-ea1" id="ey4-7G-2WS"/>
+                <outlet property="btn_6" destination="kvO-Pl-3WD" id="Qdc-cY-rqg"/>
+                <outlet property="btn_7" destination="iAQ-f8-n4z" id="hv6-89-LsC"/>
+                <outlet property="btn_8" destination="V9u-5Z-YZe" id="MJP-r2-Qtp"/>
+            </connections>
+            <point key="canvasLocation" x="194.5" y="351.5"/>
+        </tableViewCell>
+    </objects>
+</document>

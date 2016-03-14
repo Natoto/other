@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeHeaderCell" rowHeight="113" id="KGk-i7-Jjw" customClass="HomeHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QnG-ed-69l">
+                        <rect key="frame" x="8" y="8" width="98" height="96"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QnG-ed-69l" secondAttribute="height" multiplier="87:85" id="DW5-tE-klp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1592****3555" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPy-eA-dam">
+                        <rect key="frame" x="114" y="8" width="113" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1592234124" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oh7-ft-dtD">
+                        <rect key="frame" x="114" y="37" width="81" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号余额" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-Yg-4sU">
+                        <rect key="frame" x="327" y="8" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2e-n3-ddC">
+                        <rect key="frame" x="312" y="39" width="83" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QnG-ed-69l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0ny-lU-TFz"/>
+                    <constraint firstItem="oh7-ft-dtD" firstAttribute="top" secondItem="CPy-eA-dam" secondAttribute="bottom" constant="8" id="4gZ-qS-Hbk"/>
+                    <constraint firstItem="CPy-eA-dam" firstAttribute="top" secondItem="QnG-ed-69l" secondAttribute="top" id="Pc6-Oh-Ybk"/>
+                    <constraint firstItem="oh7-ft-dtD" firstAttribute="leading" secondItem="QnG-ed-69l" secondAttribute="trailing" constant="8" id="Wc8-Ef-jMS"/>
+                    <constraint firstItem="A2e-n3-ddC" firstAttribute="top" secondItem="WAI-Yg-4sU" secondAttribute="bottom" constant="5" id="XGQ-HP-iuh"/>
+                    <constraint firstItem="CPy-eA-dam" firstAttribute="leading" secondItem="QnG-ed-69l" secondAttribute="trailing" constant="8" id="YVq-h8-45e"/>
+                    <constraint firstItem="WAI-Yg-4sU" firstAttribute="top" secondItem="CPy-eA-dam" secondAttribute="top" id="fWD-n8-HeC"/>
+                    <constraint firstItem="QnG-ed-69l" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kFE-bZ-Qp6"/>
+                    <constraint firstItem="QnG-ed-69l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="nHz-nt-XZV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WAI-Yg-4sU" secondAttribute="trailing" id="rUT-SS-Fhx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="A2e-n3-ddC" secondAttribute="trailing" id="sGM-uI-Ecx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="286.5" y="200.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="72" height="72"/>
+    </resources>
+</document>

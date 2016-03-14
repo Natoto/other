@@ -1,0 +1,8 @@
+platform :ios,'7.0'
+pod 'ReactiveCocoa'
+pod 'AFNetworking', '~> 2.6.1'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'Masonry', '~> 0.6.3'
+pod 'HBKit', :git => 'https://github.com/Natoto/HBFastTableViewCotroller.git',:commit => 'f6fa389e763f55f9b05025c1247293c0ce146a64'
+
+pod 'KINWebBrowser', '~> 1.2.5'
