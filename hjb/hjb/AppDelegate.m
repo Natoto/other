@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
-
+#import "HJBRouterHelper.h"
 @interface AppDelegate ()
 
 @end
@@ -31,6 +31,7 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     self.window.rootViewController=mainNavigationctr;
+    [HJBRouterHelper initHBRouterWithRoot:mainNavigationctr];
     [self.window makeKeyAndVisible];
     
     return YES;

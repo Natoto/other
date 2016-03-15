@@ -45,6 +45,9 @@
         return @(valideuser.boolValue && validnumber.boolValue);
     }];
     
+    [[self.btn_charge rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        [self openURLString:@"CashierDeskViewController" forkey:@"CashierDeskViewController" parameters:nil];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

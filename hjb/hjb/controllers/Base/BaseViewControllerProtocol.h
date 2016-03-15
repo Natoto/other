@@ -11,6 +11,7 @@
 #import "ProtocolKit.h"
 //#import "PENG_Define.h"
 #import "UIViewAdditions.h"
+#import "HJBRouterHelper.h"
 #import <HBKit/HBKit.h>
 
 #define DEFAULT_CELL_SELECTOR  DEFAULT_CELL_SELECT_ACTION

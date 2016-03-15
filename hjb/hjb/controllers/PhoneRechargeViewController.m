@@ -68,13 +68,11 @@
         return @(valiate);
     }];
     
-//    RACSignal * valitenumberSignal = [[self.txt_money rac_textSignal] map:^id(NSString * value) {
-//        BOOL valide = value.length > 0 && (value.floatValue > 0);
-//        return  @(valide);
-//    }];
     
-    RAC(self.btn_charge,enabled) = valiteacountSignal; // [RACSignal combineLatest:@[valiteacountSignal] reduce:^id(NSNumber * valideuser){\
-        return @(valideuser.boolValue);\
+    RAC(self.btn_charge,enabled) = valiteacountSignal;
+    
+    [[self.btn_charge rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        [self openURLString:@"CashierDeskViewController" forkey:@"CashierDeskViewController" parameters:nil];
     }];
     
     @weakify(self)

@@ -10,8 +10,6 @@
 #import "MyAccountHeaderCell.h"
 #import "MyAccountChargeCell.h"
 #import "MyAccountBalancesCell.h"
-#import "RootViewController.h"
-#import "SettingViewController.h"
 
 @interface MyAccountViewController ()
 AS_CELL_STRUCT_COMMON(charge)
@@ -25,8 +23,7 @@ AS_CELL_STRUCT_COMMON(gotocharge)
 
 -(IBAction)showSetting:(id)sender
 {
-    SettingViewController * ctr = [SettingViewController new];
-    [[RootViewController sharedInstance]  rootpushViewcontroller:ctr animated:YES];
+    [self openURLString:@"SettingViewController" forkey:@"SettingViewController" parameters:nil];
 }
 
 - (void)viewDidLoad {
@@ -54,7 +51,9 @@ AS_CELL_STRUCT_COMMON(gotocharge)
 
 GET_CELL_SELECT_ACTION(cellstruct)
 {
-    
+    if (cellstruct == self.cell_struct_gotocharge || cellstruct == self.cell_struct_charge) {
+        [self openURLString:@"YBChargeViewController" forKeyAndNib:@"YBChargeViewController" parameters:nil];
+    }
 }
 
 -(CELL_STRUCT *)cell_struct_header

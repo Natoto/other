@@ -9,6 +9,7 @@
 #import "YBChargeViewController.h"
 #import "UIImage+Tint.h"
 #import "CashierDeskViewController.h"
+#import "HJBRouterHelper.h"
 
 @interface YBChargeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *txt_yyaccount;
@@ -23,8 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSLocalizedString("", <#comment#>)
-//    NSLocalizedString(<#key#>, <#comment#>)
+    
     self.title = @"Y币充值";
     RAC(self.lbl_yynumber,text) = [[self.txt_yynumber rac_textSignal] map:^id(NSString * value) {
         return [NSString stringWithFormat:@"￥%.2f",value.floatValue];
@@ -51,8 +51,7 @@
     [[self.btn_charge rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
      @strongify(self)
         [self.view endEditing:YES];
-        CashierDeskViewController * ctr = [CashierDeskViewController new];
-        [self.navigationController pushViewController:ctr animated:YES];
+        [self openURLString:@"CashierDeskViewController" forkey:@"CashierDeskViewController" parameters:nil];
     }];
 }
 

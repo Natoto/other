@@ -116,6 +116,8 @@
 		3389AA541C901F2B00BA2B74 /* NSObject+HBHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3389AA501C901F2B00BA2B74 /* NSObject+HBHUD.m */; };
 		3389AA581C902A4300BA2B74 /* HomeHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3389AA561C902A4300BA2B74 /* HomeHeaderCell.m */; };
 		3389AA591C902A4300BA2B74 /* HomeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3389AA571C902A4300BA2B74 /* HomeHeaderCell.xib */; };
+		789AC0391C9839DC00AB10A8 /* HBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 789AC0381C9839DC00AB10A8 /* HBRouter.m */; };
+		789AC03C1C983C1500AB10A8 /* HJBRouterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 789AC03B1C983C1500AB10A8 /* HJBRouterHelper.m */; };
 		CD388CE5E36633B8B12F5DD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD30A45C073976E762449478 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -328,6 +330,10 @@
 		3389AA551C902A4300BA2B74 /* HomeHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderCell.h; sourceTree = "<group>"; };
 		3389AA561C902A4300BA2B74 /* HomeHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderCell.m; sourceTree = "<group>"; };
 		3389AA571C902A4300BA2B74 /* HomeHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderCell.xib; sourceTree = "<group>"; };
+		789AC0371C9839DC00AB10A8 /* HBRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBRouter.h; sourceTree = "<group>"; };
+		789AC0381C9839DC00AB10A8 /* HBRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBRouter.m; sourceTree = "<group>"; };
+		789AC03A1C983C1500AB10A8 /* HJBRouterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBRouterHelper.h; sourceTree = "<group>"; };
+		789AC03B1C983C1500AB10A8 /* HJBRouterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJBRouterHelper.m; sourceTree = "<group>"; };
 		9480258EC14CDE257FE1B56D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CD30A45C073976E762449478 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7786B035A491068AF0AF36B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -406,6 +412,8 @@
 		3389A5111C8FD88700BA2B74 /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				789AC03A1C983C1500AB10A8 /* HJBRouterHelper.h */,
+				789AC03B1C983C1500AB10A8 /* HJBRouterHelper.m */,
 				33016F271C92D206003E8F7C /* HBLanguage.h */,
 				33016F281C92D206003E8F7C /* HBLanguage.m */,
 				3389A5121C8FD88700BA2B74 /* GlobalData.h */,
@@ -441,6 +449,7 @@
 		3389A7801C8FD88A00BA2B74 /* shared_library */ = {
 			isa = PBXGroup;
 			children = (
+				789AC0361C9839DC00AB10A8 /* XYRouter */,
 				3389AA3D1C901A9D00BA2B74 /* FDFullscreenPopGesture */,
 				3389A9601C8FDA1A00BA2B74 /* YYWebImage */,
 				3389A7911C8FD88A00BA2B74 /* FMDB */,
@@ -733,6 +742,15 @@
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
+		789AC0361C9839DC00AB10A8 /* XYRouter */ = {
+			isa = PBXGroup;
+			children = (
+				789AC0371C9839DC00AB10A8 /* HBRouter.h */,
+				789AC0381C9839DC00AB10A8 /* HBRouter.m */,
+			);
+			path = XYRouter;
+			sourceTree = "<group>";
+		};
 		B4B00E32318805739F11BE97 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -952,6 +970,7 @@
 				3389A93B1C8FD88A00BA2B74 /* NSObject+ObjectMap.m in Sources */,
 				3389A98C1C8FDA1A00BA2B74 /* YYMemoryCache.m in Sources */,
 				3389A98F1C8FDA1A00BA2B74 /* MKAnnotationView+YYWebImage.m in Sources */,
+				789AC03C1C983C1500AB10A8 /* HJBRouterHelper.m in Sources */,
 				334A33DD1C97E40700DC8C3F /* MyAccountViewController.m in Sources */,
 				334A33E61C97E7E900DC8C3F /* MyAccountBalancesCell.m in Sources */,
 				3389A7F91C8FD88A00BA2B74 /* model.m in Sources */,
@@ -979,6 +998,7 @@
 				336DC52A1C92B2BE00766E00 /* YBChargeViewController.m in Sources */,
 				3389AA311C9019E400BA2B74 /* BaseViewController.m in Sources */,
 				3389AA541C901F2B00BA2B74 /* NSObject+HBHUD.m in Sources */,
+				789AC0391C9839DC00AB10A8 /* HBRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

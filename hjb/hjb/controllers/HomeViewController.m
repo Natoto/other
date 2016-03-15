@@ -12,13 +12,13 @@
 #import "HomeFunctionsCell.h"
 #import "HBImageViewCell.h"
 #import "RootViewController.h"
-#import "SettingViewController.h"
-#import "YBChargeViewController.h"
-#import "QBChargeViewController.h"
-#import "PhoneRechargeViewController.h"
 #import "HBLanguage.h"
-#import "YYCommissionViewController.h"
-#import "YYJBViewController.h"
+//#import "YYCommissionViewController.h"
+//#import "YYJBViewController.h"
+//#import "SettingViewController.h"
+//#import "YBChargeViewController.h"
+//#import "QBChargeViewController.h"
+//#import "PhoneRechargeViewController.h"
 
 typedef enum : NSUInteger {
     YYTOOLTYPE_YB,
@@ -29,7 +29,7 @@ typedef enum : NSUInteger {
     YYTOOLTYPE_YYJB,
     YYTOOLTYPE_SMZF,
 } YYTOOLTYPE;
-
+  
 @interface HomeViewController ()
 AS_CELL_STRUCT_COMMON(header)
 AS_CELL_STRUCT_COMMON(functons)
@@ -45,7 +45,6 @@ AS_CELL_STRUCT_COMMON(ads)
     
     self.navigationbar.title = __TEXT(@"homepage");// @"首页";
     NSString * righttitle = __TEXT(@"setting");
-    
     
     [self.navigationbar setrightBarButtonItemWithTitle:righttitle target:self selector:@selector(showSetting:)];
     
@@ -70,20 +69,18 @@ AS_CELL_STRUCT_COMMON(ads)
                 switch (x.intValue) {
                     case YYTOOLTYPE_YB:
                     {
-                        YBChargeViewController * ctr = [[YBChargeViewController alloc] initWithNibName:@"YBChargeViewController" bundle:nil];
-                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        [self openURLString:@"YBChargeViewController" forKeyAndNib:@"YBChargeViewController" parameters:nil];
                         break;
                     }
                     case YYTOOLTYPE_QB:
                     {
-                        QBChargeViewController * ctr = [[QBChargeViewController alloc] initWithNibName:@"QBChargeViewController" bundle:nil];
-                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        [self openURLString:@"QBChargeViewController" forKeyAndNib:@"QBChargeViewController" parameters:nil];
+                        
                         break;
                     }
                     case YYTOOLTYPE_PHONEFEE:
                     {
-                        PhoneRechargeViewController * ctr = [[PhoneRechargeViewController alloc] initWithNibName:@"PhoneRechargeViewController" bundle:nil];
-                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        [self openURLString:@"PhoneRechargeViewController" forKeyAndNib:@"PhoneRechargeViewController" parameters:nil];
                         break;
                     }
                     case YYTOOLTYPE_BF:
@@ -93,14 +90,12 @@ AS_CELL_STRUCT_COMMON(ads)
                     }
                     case YYTOOLTYPE_YJ:
                     {
-                        YYCommissionViewController * ctr = [YYCommissionViewController new];
-                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                         [self openURLString:@"YYCommissionViewController" forkey:@"YYCommissionViewController" parameters:nil];
                         break;
                     }
                     case YYTOOLTYPE_YYJB:
                     {
-                        YYJBViewController * ctr = [YYJBViewController new];
-                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        [self openURLString:@"YYJBViewController" forkey:@"YYJBViewController" parameters:nil];
                         break;
                     }
                     default:
@@ -116,13 +111,11 @@ AS_CELL_STRUCT_COMMON(ads)
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-
 }
 
 -(IBAction)showSetting:(id)sender
 {
-    SettingViewController * ctr = [SettingViewController new];
-    [[RootViewController sharedInstance]  rootpushViewcontroller:ctr animated:YES];
+    [self openURLString:@"SettingViewController" forkey:@"SettingViewController" parameters:nil];
 }
 
 GET_CELL_SELECT_ACTION(cellstruct)
