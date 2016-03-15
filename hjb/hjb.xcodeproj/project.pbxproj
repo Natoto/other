@@ -32,6 +32,11 @@
 		334A33EB1C97E87900DC8C3F /* MyAccountChargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33E91C97E87900DC8C3F /* MyAccountChargeCell.m */; };
 		334A33EC1C97E87900DC8C3F /* MyAccountChargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334A33EA1C97E87900DC8C3F /* MyAccountChargeCell.xib */; };
 		334A33EF1C97EE0A00DC8C3F /* TradingRecordyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33EE1C97EE0A00DC8C3F /* TradingRecordyViewController.m */; };
+		334A33F21C97FB5F00DC8C3F /* CashierDeskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33F11C97FB5F00DC8C3F /* CashierDeskViewController.m */; };
+		334A33F61C97FBCB00DC8C3F /* CashierDeskHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33F41C97FBCB00DC8C3F /* CashierDeskHeaderCell.m */; };
+		334A33F71C97FBCB00DC8C3F /* CashierDeskHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334A33F51C97FBCB00DC8C3F /* CashierDeskHeaderCell.xib */; };
+		334A33FB1C97FE4C00DC8C3F /* CashierDeskPayWayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33F91C97FE4C00DC8C3F /* CashierDeskPayWayCell.m */; };
+		334A33FC1C97FE4C00DC8C3F /* CashierDeskPayWayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334A33FA1C97FE4C00DC8C3F /* CashierDeskPayWayCell.xib */; };
 		334E10291C96576000345503 /* PhoneRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E10271C96576000345503 /* PhoneRechargeViewController.m */; };
 		334E102A1C96576000345503 /* PhoneRechargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334E10281C96576000345503 /* PhoneRechargeViewController.xib */; };
 		334E102D1C966A9B00345503 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E102C1C966A9B00345503 /* UIAlertView+MKBlockAdditions.m */; };
@@ -159,6 +164,14 @@
 		334A33EA1C97E87900DC8C3F /* MyAccountChargeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccountChargeCell.xib; sourceTree = "<group>"; };
 		334A33ED1C97EE0A00DC8C3F /* TradingRecordyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingRecordyViewController.h; sourceTree = "<group>"; };
 		334A33EE1C97EE0A00DC8C3F /* TradingRecordyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingRecordyViewController.m; sourceTree = "<group>"; };
+		334A33F01C97FB5F00DC8C3F /* CashierDeskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashierDeskViewController.h; sourceTree = "<group>"; };
+		334A33F11C97FB5F00DC8C3F /* CashierDeskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashierDeskViewController.m; sourceTree = "<group>"; };
+		334A33F31C97FBCB00DC8C3F /* CashierDeskHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashierDeskHeaderCell.h; sourceTree = "<group>"; };
+		334A33F41C97FBCB00DC8C3F /* CashierDeskHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashierDeskHeaderCell.m; sourceTree = "<group>"; };
+		334A33F51C97FBCB00DC8C3F /* CashierDeskHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CashierDeskHeaderCell.xib; sourceTree = "<group>"; };
+		334A33F81C97FE4C00DC8C3F /* CashierDeskPayWayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashierDeskPayWayCell.h; sourceTree = "<group>"; };
+		334A33F91C97FE4C00DC8C3F /* CashierDeskPayWayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashierDeskPayWayCell.m; sourceTree = "<group>"; };
+		334A33FA1C97FE4C00DC8C3F /* CashierDeskPayWayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CashierDeskPayWayCell.xib; sourceTree = "<group>"; };
 		334E10261C96576000345503 /* PhoneRechargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneRechargeViewController.h; sourceTree = "<group>"; };
 		334E10271C96576000345503 /* PhoneRechargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneRechargeViewController.m; sourceTree = "<group>"; };
 		334E10281C96576000345503 /* PhoneRechargeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneRechargeViewController.xib; sourceTree = "<group>"; };
@@ -513,6 +526,12 @@
 		3389A7DB1C8FD88A00BA2B74 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				334A33F81C97FE4C00DC8C3F /* CashierDeskPayWayCell.h */,
+				334A33F91C97FE4C00DC8C3F /* CashierDeskPayWayCell.m */,
+				334A33FA1C97FE4C00DC8C3F /* CashierDeskPayWayCell.xib */,
+				334A33F31C97FBCB00DC8C3F /* CashierDeskHeaderCell.h */,
+				334A33F41C97FBCB00DC8C3F /* CashierDeskHeaderCell.m */,
+				334A33F51C97FBCB00DC8C3F /* CashierDeskHeaderCell.xib */,
 				334A33DE1C97E44D00DC8C3F /* MyAccountHeaderCell.h */,
 				334A33DF1C97E44D00DC8C3F /* MyAccountHeaderCell.m */,
 				334A33E01C97E44D00DC8C3F /* MyAccountHeaderCell.xib */,
@@ -613,6 +632,8 @@
 				3389A9EE1C90192100BA2B74 /* Base */,
 				3389A9A71C90182E00BA2B74 /* HomeViewController.h */,
 				3389A9A81C90182E00BA2B74 /* HomeViewController.m */,
+				334A33F01C97FB5F00DC8C3F /* CashierDeskViewController.h */,
+				334A33F11C97FB5F00DC8C3F /* CashierDeskViewController.m */,
 				334A33DB1C97E40700DC8C3F /* MyAccountViewController.h */,
 				334A33DC1C97E40700DC8C3F /* MyAccountViewController.m */,
 				334A33ED1C97EE0A00DC8C3F /* TradingRecordyViewController.h */,
@@ -799,11 +820,13 @@
 				333F784A1C912A18000B7638 /* HomeFunctionsCell.xib in Resources */,
 				3389A50A1C8FD52200BA2B74 /* LaunchScreen.storyboard in Resources */,
 				334A33DA1C97ACFC00DC8C3F /* YYJBTableViewCell.xib in Resources */,
+				334A33FC1C97FE4C00DC8C3F /* CashierDeskPayWayCell.xib in Resources */,
 				334A33E71C97E7E900DC8C3F /* MyAccountBalancesCell.xib in Resources */,
 				3389AA591C902A4300BA2B74 /* HomeHeaderCell.xib in Resources */,
 				3389A5071C8FD52200BA2B74 /* Assets.xcassets in Resources */,
 				334A33E21C97E44D00DC8C3F /* MyAccountHeaderCell.xib in Resources */,
 				333F785E1C917CBF000B7638 /* LoginViewController.xib in Resources */,
+				334A33F71C97FBCB00DC8C3F /* CashierDeskHeaderCell.xib in Resources */,
 				333F78551C916E11000B7638 /* Default-568h@2x.png in Resources */,
 				33016F151C92CEA1003E8F7C /* Localizable.strings in Resources */,
 				334E102A1C96576000345503 /* PhoneRechargeViewController.xib in Resources */,
@@ -879,11 +902,14 @@
 				3389AA301C9019E400BA2B74 /* BaseViewControllerProtocol.m in Sources */,
 				3389AA581C902A4300BA2B74 /* HomeHeaderCell.m in Sources */,
 				334A33D21C97A6F000DC8C3F /* YYCommissionViewController.m in Sources */,
+				334A33F21C97FB5F00DC8C3F /* CashierDeskViewController.m in Sources */,
 				33016F291C92D206003E8F7C /* HBLanguage.m in Sources */,
 				3389AA321C9019E400BA2B74 /* BaseTableViewController.m in Sources */,
 				3389A93E1C8FD88A00BA2B74 /* RKTabView.m in Sources */,
 				336DC5331C92C09C00766E00 /* QBChargeViewController.m in Sources */,
 				3389A9911C8FDA1A00BA2B74 /* UIImage+YYWebImage.m in Sources */,
+				334A33F61C97FBCB00DC8C3F /* CashierDeskHeaderCell.m in Sources */,
+				334A33FB1C97FE4C00DC8C3F /* CashierDeskPayWayCell.m in Sources */,
 				3389A98E1C8FDA1A00BA2B74 /* CALayer+YYWebImage.m in Sources */,
 				3389A9931C8FDA1A00BA2B74 /* YYAnimatedImageView.m in Sources */,
 				3389A93C1C8FD88A00BA2B74 /* RedPoint.m in Sources */,

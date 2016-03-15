@@ -8,6 +8,7 @@
 
 #import "YBChargeViewController.h"
 #import "UIImage+Tint.h"
+#import "CashierDeskViewController.h"
 
 @interface YBChargeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *txt_yyaccount;
@@ -46,8 +47,13 @@
         return @(valideuser.boolValue && validnumber.boolValue);
     }];
     
-    
-    
+    @weakify(self)
+    [[self.btn_charge rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+     @strongify(self)
+        [self.view endEditing:YES];
+        CashierDeskViewController * ctr = [CashierDeskViewController new];
+        [self.navigationController pushViewController:ctr animated:YES];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

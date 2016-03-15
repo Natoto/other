@@ -20,78 +20,61 @@
  
 - (void)transitionCube
 {
-    [self transitionCube:BeeUITransitionDirectionRight];
+    [self transitionCube:HBUITransitionDirectionRight];
 }
 
-- (void)transitionCube:(BeeUITransitionDirection)from
+- (void)transitionCube:(HBUITransitionDirection)from
 {
-    [self transiteFor:self direction:from];
+    [self transiteFor:self direction:from Type:@"cube"];
 }
 
 - (void)transitionPush
 {
-    [self transitionPush:BeeUITransitionDirectionRight];
+    [self transitionPush:HBUITransitionDirectionRight];
 }
 
-- (void)transitionPush:(BeeUITransitionDirection)from
+- (void)transitionPush:(HBUITransitionDirection)from
 {
-    [self transiteFor:self direction:from];
+    [self transiteFor:self direction:from Type:kCATransitionPush];
 }
 
 - (void)transitionFlip
 {
-    [self transitionFlip:BeeUITransitionDirectionRight];
+    [self transitionFlip:HBUITransitionDirectionRight];
 }
 
-- (void)transitionFlip:(BeeUITransitionDirection)from
+- (void)transitionFlip:(HBUITransitionDirection)from
 {
-    [self transiteFor:self direction:from];
+    [self transiteFor:self direction:from Type:@"oglFlip"];
 }
 
 
 
 - (void)transitionFade
 {
-    [self transitionFade:BeeUITransitionDirectionRight];
+    [self transitionFade:HBUITransitionDirectionRight];
 }
 
-- (void)transitionFade:(BeeUITransitionDirection)from
+- (void)transitionFade:(HBUITransitionDirection)from
 {
-    [self transiteFor:self direction:from];
+    [self transiteFor:self direction:from Type:kCATransitionFade];
 }
 
-
-- (void)transiteFor:(UIView *)container direction:(BeeUITransitionDirection)direction
+- (NSString *)CATransitionFrom:(HBUITransitionDirection)dir;
 {
-    CATransition * animation = [CATransition animation];
-    if ( animation )
-    {
-        [animation setDuration:0.2f];
-        [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
-        [animation setType:@"fade"];
-        [animation setSubtype:[self CATransitionFrom:direction]];
-        [animation setRemovedOnCompletion:YES];
-        
-        //		[container.layer removeAnimationForKey:@"fade"];
-        [container.layer addAnimation:animation forKey:@"fade"];
-    }
-}
-
-- (NSString *)CATransitionFrom:(BeeUITransitionDirection)dir;
-{
-    if ( dir == BeeUITransitionDirectionRight )
+    if ( dir == HBUITransitionDirectionRight )
     {
         return kCATransitionFromRight;
     }
-    else if ( dir == BeeUITransitionDirectionLeft )
+    else if ( dir == HBUITransitionDirectionLeft )
     {
         return kCATransitionFromLeft;
     }
-    else if ( dir == BeeUITransitionDirectionTop )
+    else if ( dir == HBUITransitionDirectionTop )
     {
         return kCATransitionFromTop;
     }
-    else if ( dir == BeeUITransitionDirectionBottom )
+    else if ( dir == HBUITransitionDirectionBottom )
     {
         return kCATransitionFromBottom;
     }
@@ -99,5 +82,48 @@
     return kCATransitionFromRight;
 }
 
+
+- (void)transiteFor:(UIView *)container direction:(HBUITransitionDirection)direction  Type:(NSString *) type
+{
+    CATransition * animation = [CATransition animation];
+    if ( animation )
+    {
+        if ([type isEqualToString:kCATransitionFade]) {
+            [animation setDuration:0.2f];
+        }
+        else
+        [animation setDuration:0.5f];
+        [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
+        [animation setType:type];
+        [animation setSubtype:[self CATransitionFrom:direction]];
+        [animation setRemovedOnCompletion:YES];
+        [container.layer addAnimation:animation forKey:@"animation"];
+    }
+}
+
+
+//#pragma CATransition动画实现
+//- (void) transitionWithType:(NSString *) type WithSubtype:(NSString *) subtype ForView : (UIView *) view
+//{
+//    //创建CATransition对象
+//    CATransition *animation = [CATransition animation];
+//    
+//    //设置运动时间
+//    animation.duration = 0.7f;
+//    
+//    //设置运动type
+//    animation.type = type;
+//    if (subtype != nil) {
+//        
+//        //设置子类
+//        animation.subtype = subtype;
+//    }
+//    
+//    //设置运动速度
+//    animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
+//    
+//    [view.layer addAnimation:animation forKey:@"animation"];
+//    
+//}
 
 @end

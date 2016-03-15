@@ -10,33 +10,33 @@
 
 typedef enum
 {
-    BeeUITransitionDirectionRight,
-    BeeUITransitionDirectionLeft,
-    BeeUITransitionDirectionTop,
-    BeeUITransitionDirectionBottom
-} BeeUITransitionDirection;
+    HBUITransitionDirectionRight,
+    HBUITransitionDirectionLeft,
+    HBUITransitionDirectionTop,
+    HBUITransitionDirectionBottom
+} HBUITransitionDirection;
 
 typedef enum
 {
-    BeeUITransitionTypeDefault,
-    BeeUITransitionTypeCube,
-    BeeUITransitionTypeFade,
-    BeeUITransitionTypeFlip,
-    BeeUITransitionTypePush
-} BeeUITransitionType;
+    HBUITransitionTypeDefault,
+    HBUITransitionTypeCube,
+    HBUITransitionTypeFade,
+    HBUITransitionTypeFlip,
+    HBUITransitionTypePush
+} HBUITransitionType;
 
 @interface UIView(Transition)
-//@property (nonatomic, retain) BeeUITransition *	transition;
+//@property (nonatomic, retain) HBUITransition *	transition;
 
 - (void)transitionFade;
-- (void)transitionFade:(BeeUITransitionDirection)from;
+- (void)transitionFade:(HBUITransitionDirection)from;
 
 - (void)transitionCube;
-- (void)transitionCube:(BeeUITransitionDirection)from;
+- (void)transitionCube:(HBUITransitionDirection)from;
 
 - (void)transitionPush;
-- (void)transitionPush:(BeeUITransitionDirection)from;
+- (void)transitionPush:(HBUITransitionDirection)from;
 
 - (void)transitionFlip;
-- (void)transitionFlip:(BeeUITransitionDirection)from;
+- (void)transitionFlip:(HBUITransitionDirection)from;
 @end

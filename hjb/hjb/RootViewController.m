@@ -18,6 +18,7 @@
 @end
 
 @implementation RootViewController
+
 DEF_SINGLETON(RootViewController)
 
 - (void)viewDidLoad {
