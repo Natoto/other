@@ -17,6 +17,18 @@
 #import "QBChargeViewController.h"
 #import "PhoneRechargeViewController.h"
 #import "HBLanguage.h"
+#import "YYCommissionViewController.h"
+#import "YYJBViewController.h"
+
+typedef enum : NSUInteger {
+    YYTOOLTYPE_YB,
+    YYTOOLTYPE_QB,
+    YYTOOLTYPE_PHONEFEE,
+    YYTOOLTYPE_BF,
+    YYTOOLTYPE_YJ,
+    YYTOOLTYPE_YYJB,
+    YYTOOLTYPE_SMZF,
+} YYTOOLTYPE;
 
 @interface HomeViewController ()
 AS_CELL_STRUCT_COMMON(header)
@@ -45,41 +57,59 @@ AS_CELL_STRUCT_COMMON(ads)
     [self.dataDictionary setObject:self.cell_struct_functons forKey:KEY_INDEXPATH(1, 0)];
     [self.dataDictionary setObject:self.cell_struct_ads forKey:KEY_INDEXPATH(2, 0)];
    
+    [self loadActions];
+}
+
+-(void)loadActions
+{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-      HomeFunctionsCell * cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
-      if (cell) {
-          [cell.delegateSignal  subscribeNext:^(NSNumber * x) {
-              NSLog(@"%@",x);
-              switch (x.intValue) {
-                  case 0:
-                  {
-                      YBChargeViewController * ctr = [[YBChargeViewController alloc] initWithNibName:@"YBChargeViewController" bundle:nil];
-                      [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
-                      break;
-                  }
-                  case 1:
-                  {
-                      QBChargeViewController * ctr = [[QBChargeViewController alloc] initWithNibName:@"QBChargeViewController" bundle:nil];
-                      [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
-                      break;
-                  }
-                  case 2:
-                  {
-                      PhoneRechargeViewController * ctr = [[PhoneRechargeViewController alloc] initWithNibName:@"PhoneRechargeViewController" bundle:nil];
-                      [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
-                      break;
-                  }
-                  case 3:
-                  {
-                      [[RootViewController sharedInstance] openURL:@"http://wap.www.up24.com/"];
-                      break;
-                  }
-                  default:
-                      break;
-              }
-          }];
-      }
-});
+        HomeFunctionsCell * cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+        if (cell) {
+            [cell.delegateSignal  subscribeNext:^(NSNumber * x) {
+                NSLog(@"%@",x);
+                switch (x.intValue) {
+                    case YYTOOLTYPE_YB:
+                    {
+                        YBChargeViewController * ctr = [[YBChargeViewController alloc] initWithNibName:@"YBChargeViewController" bundle:nil];
+                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        break;
+                    }
+                    case YYTOOLTYPE_QB:
+                    {
+                        QBChargeViewController * ctr = [[QBChargeViewController alloc] initWithNibName:@"QBChargeViewController" bundle:nil];
+                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        break;
+                    }
+                    case YYTOOLTYPE_PHONEFEE:
+                    {
+                        PhoneRechargeViewController * ctr = [[PhoneRechargeViewController alloc] initWithNibName:@"PhoneRechargeViewController" bundle:nil];
+                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        break;
+                    }
+                    case YYTOOLTYPE_BF:
+                    {
+                        [[RootViewController sharedInstance] openURL:@"http://wap.up24.com"];
+                        break;
+                    }
+                    case YYTOOLTYPE_YJ:
+                    {
+                        YYCommissionViewController * ctr = [YYCommissionViewController new];
+                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        break;
+                    }
+                    case YYTOOLTYPE_YYJB:
+                    {
+                        YYJBViewController * ctr = [YYJBViewController new];
+                        [[RootViewController sharedInstance] rootpushViewcontroller:ctr animated:YES];
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            }];
+        }
+    });
+
     
 }
 

@@ -19,6 +19,19 @@
 		333F785D1C917CBF000B7638 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F785B1C917CBF000B7638 /* LoginViewController.m */; };
 		333F785E1C917CBF000B7638 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333F785C1C917CBF000B7638 /* LoginViewController.xib */; };
 		333F78611C918609000B7638 /* UIViewController+DismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F78601C918609000B7638 /* UIViewController+DismissKeyboard.m */; };
+		334A33CF1C97A3B000DC8C3F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334A33CE1C97A3B000DC8C3F /* WebKit.framework */; };
+		334A33D21C97A6F000DC8C3F /* YYCommissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33D11C97A6F000DC8C3F /* YYCommissionViewController.m */; };
+		334A33D51C97AC1C00DC8C3F /* YYJBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33D41C97AC1C00DC8C3F /* YYJBViewController.m */; };
+		334A33D91C97ACFC00DC8C3F /* YYJBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33D71C97ACFC00DC8C3F /* YYJBTableViewCell.m */; };
+		334A33DA1C97ACFC00DC8C3F /* YYJBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334A33D81C97ACFC00DC8C3F /* YYJBTableViewCell.xib */; };
+		334A33DD1C97E40700DC8C3F /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33DC1C97E40700DC8C3F /* MyAccountViewController.m */; };
+		334A33E11C97E44D00DC8C3F /* MyAccountHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33DF1C97E44D00DC8C3F /* MyAccountHeaderCell.m */; };
+		334A33E21C97E44D00DC8C3F /* MyAccountHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334A33E01C97E44D00DC8C3F /* MyAccountHeaderCell.xib */; };
+		334A33E61C97E7E900DC8C3F /* MyAccountBalancesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33E41C97E7E900DC8C3F /* MyAccountBalancesCell.m */; };
+		334A33E71C97E7E900DC8C3F /* MyAccountBalancesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334A33E51C97E7E900DC8C3F /* MyAccountBalancesCell.xib */; };
+		334A33EB1C97E87900DC8C3F /* MyAccountChargeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33E91C97E87900DC8C3F /* MyAccountChargeCell.m */; };
+		334A33EC1C97E87900DC8C3F /* MyAccountChargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334A33EA1C97E87900DC8C3F /* MyAccountChargeCell.xib */; };
+		334A33EF1C97EE0A00DC8C3F /* TradingRecordyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A33EE1C97EE0A00DC8C3F /* TradingRecordyViewController.m */; };
 		334E10291C96576000345503 /* PhoneRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E10271C96576000345503 /* PhoneRechargeViewController.m */; };
 		334E102A1C96576000345503 /* PhoneRechargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334E10281C96576000345503 /* PhoneRechargeViewController.xib */; };
 		334E102D1C966A9B00345503 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E102C1C966A9B00345503 /* UIAlertView+MKBlockAdditions.m */; };
@@ -125,6 +138,27 @@
 		333F785C1C917CBF000B7638 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		333F785F1C918609000B7638 /* UIViewController+DismissKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DismissKeyboard.h"; sourceTree = "<group>"; };
 		333F78601C918609000B7638 /* UIViewController+DismissKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DismissKeyboard.m"; sourceTree = "<group>"; };
+		334A33CE1C97A3B000DC8C3F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
+		334A33D01C97A6F000DC8C3F /* YYCommissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCommissionViewController.h; sourceTree = "<group>"; };
+		334A33D11C97A6F000DC8C3F /* YYCommissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCommissionViewController.m; sourceTree = "<group>"; };
+		334A33D31C97AC1C00DC8C3F /* YYJBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJBViewController.h; sourceTree = "<group>"; };
+		334A33D41C97AC1C00DC8C3F /* YYJBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJBViewController.m; sourceTree = "<group>"; };
+		334A33D61C97ACFC00DC8C3F /* YYJBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJBTableViewCell.h; sourceTree = "<group>"; };
+		334A33D71C97ACFC00DC8C3F /* YYJBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJBTableViewCell.m; sourceTree = "<group>"; };
+		334A33D81C97ACFC00DC8C3F /* YYJBTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYJBTableViewCell.xib; sourceTree = "<group>"; };
+		334A33DB1C97E40700DC8C3F /* MyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
+		334A33DC1C97E40700DC8C3F /* MyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountViewController.m; sourceTree = "<group>"; };
+		334A33DE1C97E44D00DC8C3F /* MyAccountHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountHeaderCell.h; sourceTree = "<group>"; };
+		334A33DF1C97E44D00DC8C3F /* MyAccountHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountHeaderCell.m; sourceTree = "<group>"; };
+		334A33E01C97E44D00DC8C3F /* MyAccountHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccountHeaderCell.xib; sourceTree = "<group>"; };
+		334A33E31C97E7E900DC8C3F /* MyAccountBalancesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountBalancesCell.h; sourceTree = "<group>"; };
+		334A33E41C97E7E900DC8C3F /* MyAccountBalancesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountBalancesCell.m; sourceTree = "<group>"; };
+		334A33E51C97E7E900DC8C3F /* MyAccountBalancesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccountBalancesCell.xib; sourceTree = "<group>"; };
+		334A33E81C97E87900DC8C3F /* MyAccountChargeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountChargeCell.h; sourceTree = "<group>"; };
+		334A33E91C97E87900DC8C3F /* MyAccountChargeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountChargeCell.m; sourceTree = "<group>"; };
+		334A33EA1C97E87900DC8C3F /* MyAccountChargeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccountChargeCell.xib; sourceTree = "<group>"; };
+		334A33ED1C97EE0A00DC8C3F /* TradingRecordyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingRecordyViewController.h; sourceTree = "<group>"; };
+		334A33EE1C97EE0A00DC8C3F /* TradingRecordyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingRecordyViewController.m; sourceTree = "<group>"; };
 		334E10261C96576000345503 /* PhoneRechargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneRechargeViewController.h; sourceTree = "<group>"; };
 		334E10271C96576000345503 /* PhoneRechargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneRechargeViewController.m; sourceTree = "<group>"; };
 		334E10281C96576000345503 /* PhoneRechargeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneRechargeViewController.xib; sourceTree = "<group>"; };
@@ -291,6 +325,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334A33CF1C97A3B000DC8C3F /* WebKit.framework in Frameworks */,
 				3389A9A51C8FDF7000BA2B74 /* libz.1.1.3.tbd in Frameworks */,
 				3389A95F1C8FD93300BA2B74 /* libsqlite3.0.tbd in Frameworks */,
 				CD388CE5E36633B8B12F5DD5 /* libPods.a in Frameworks */,
@@ -478,6 +513,18 @@
 		3389A7DB1C8FD88A00BA2B74 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				334A33DE1C97E44D00DC8C3F /* MyAccountHeaderCell.h */,
+				334A33DF1C97E44D00DC8C3F /* MyAccountHeaderCell.m */,
+				334A33E01C97E44D00DC8C3F /* MyAccountHeaderCell.xib */,
+				334A33E31C97E7E900DC8C3F /* MyAccountBalancesCell.h */,
+				334A33E41C97E7E900DC8C3F /* MyAccountBalancesCell.m */,
+				334A33E51C97E7E900DC8C3F /* MyAccountBalancesCell.xib */,
+				334A33E81C97E87900DC8C3F /* MyAccountChargeCell.h */,
+				334A33E91C97E87900DC8C3F /* MyAccountChargeCell.m */,
+				334A33EA1C97E87900DC8C3F /* MyAccountChargeCell.xib */,
+				334A33D61C97ACFC00DC8C3F /* YYJBTableViewCell.h */,
+				334A33D71C97ACFC00DC8C3F /* YYJBTableViewCell.m */,
+				334A33D81C97ACFC00DC8C3F /* YYJBTableViewCell.xib */,
 				333F78461C912A18000B7638 /* HomeFunctionsCell.h */,
 				333F78471C912A18000B7638 /* HomeFunctionsCell.m */,
 				333F78481C912A18000B7638 /* HomeFunctionsCell.xib */,
@@ -566,6 +613,14 @@
 				3389A9EE1C90192100BA2B74 /* Base */,
 				3389A9A71C90182E00BA2B74 /* HomeViewController.h */,
 				3389A9A81C90182E00BA2B74 /* HomeViewController.m */,
+				334A33DB1C97E40700DC8C3F /* MyAccountViewController.h */,
+				334A33DC1C97E40700DC8C3F /* MyAccountViewController.m */,
+				334A33ED1C97EE0A00DC8C3F /* TradingRecordyViewController.h */,
+				334A33EE1C97EE0A00DC8C3F /* TradingRecordyViewController.m */,
+				334A33D01C97A6F000DC8C3F /* YYCommissionViewController.h */,
+				334A33D11C97A6F000DC8C3F /* YYCommissionViewController.m */,
+				334A33D31C97AC1C00DC8C3F /* YYJBViewController.h */,
+				334A33D41C97AC1C00DC8C3F /* YYJBViewController.m */,
 				333F78561C916E76000B7638 /* SettingViewController.h */,
 				333F78571C916E76000B7638 /* SettingViewController.m */,
 				334E10261C96576000345503 /* PhoneRechargeViewController.h */,
@@ -669,6 +724,7 @@
 		B8DA5219A8386ADD452228BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				334A33CE1C97A3B000DC8C3F /* WebKit.framework */,
 				3389A9A41C8FDF7000BA2B74 /* libz.1.1.3.tbd */,
 				3389A95E1C8FD93300BA2B74 /* libsqlite3.0.tbd */,
 				CD30A45C073976E762449478 /* libPods.a */,
@@ -739,10 +795,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				333F78541C916E11000B7638 /* Default@2x.png in Resources */,
+				334A33EC1C97E87900DC8C3F /* MyAccountChargeCell.xib in Resources */,
 				333F784A1C912A18000B7638 /* HomeFunctionsCell.xib in Resources */,
 				3389A50A1C8FD52200BA2B74 /* LaunchScreen.storyboard in Resources */,
+				334A33DA1C97ACFC00DC8C3F /* YYJBTableViewCell.xib in Resources */,
+				334A33E71C97E7E900DC8C3F /* MyAccountBalancesCell.xib in Resources */,
 				3389AA591C902A4300BA2B74 /* HomeHeaderCell.xib in Resources */,
 				3389A5071C8FD52200BA2B74 /* Assets.xcassets in Resources */,
+				334A33E21C97E44D00DC8C3F /* MyAccountHeaderCell.xib in Resources */,
 				333F785E1C917CBF000B7638 /* LoginViewController.xib in Resources */,
 				333F78551C916E11000B7638 /* Default-568h@2x.png in Resources */,
 				33016F151C92CEA1003E8F7C /* Localizable.strings in Resources */,
@@ -810,6 +870,7 @@
 				3389A5021C8FD52200BA2B74 /* RootViewController.m in Sources */,
 				3389AA351C9019E400BA2B74 /* BaseTableViewCell.m in Sources */,
 				3389AA391C901A3C00BA2B74 /* UIViewAdditions.m in Sources */,
+				334A33EF1C97EE0A00DC8C3F /* TradingRecordyViewController.m in Sources */,
 				3389A7FA1C8FD88A00BA2B74 /* PENGClient.m in Sources */,
 				3389AA341C9019E400BA2B74 /* PKProtocolExtension.m in Sources */,
 				3389AA431C901B1000BA2B74 /* PengGifRefresh.m in Sources */,
@@ -817,6 +878,7 @@
 				334E103A1C96BAA500345503 /* HBWebBrowserViewController.m in Sources */,
 				3389AA301C9019E400BA2B74 /* BaseViewControllerProtocol.m in Sources */,
 				3389AA581C902A4300BA2B74 /* HomeHeaderCell.m in Sources */,
+				334A33D21C97A6F000DC8C3F /* YYCommissionViewController.m in Sources */,
 				33016F291C92D206003E8F7C /* HBLanguage.m in Sources */,
 				3389AA321C9019E400BA2B74 /* BaseTableViewController.m in Sources */,
 				3389A93E1C8FD88A00BA2B74 /* RKTabView.m in Sources */,
@@ -842,6 +904,8 @@
 				3389AA401C901A9D00BA2B74 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3389A9991C8FDA1A00BA2B74 /* YYWebImageManager.m in Sources */,
 				3389A9921C8FDA1A00BA2B74 /* UIImageView+YYWebImage.m in Sources */,
+				334A33D91C97ACFC00DC8C3F /* YYJBTableViewCell.m in Sources */,
+				334A33E11C97E44D00DC8C3F /* MyAccountHeaderCell.m in Sources */,
 				3389AA491C901E3000BA2B74 /* PENGProtocol.m in Sources */,
 				3389A9A91C90182E00BA2B74 /* HomeViewController.m in Sources */,
 				334E10291C96576000345503 /* PhoneRechargeViewController.m in Sources */,
@@ -852,6 +916,7 @@
 				3389AA331C9019E400BA2B74 /* BaseCollectionViewController.m in Sources */,
 				3389A98A1C8FDA1A00BA2B74 /* YYDiskCache.m in Sources */,
 				3389AA2E1C9019E400BA2B74 /* BubbleStruct.m in Sources */,
+				334A33EB1C97E87900DC8C3F /* MyAccountChargeCell.m in Sources */,
 				3389A9331C8FD88A00BA2B74 /* FMDatabase.m in Sources */,
 				333F78611C918609000B7638 /* UIViewController+DismissKeyboard.m in Sources */,
 				333F785D1C917CBF000B7638 /* LoginViewController.m in Sources */,
@@ -861,11 +926,14 @@
 				3389A93B1C8FD88A00BA2B74 /* NSObject+ObjectMap.m in Sources */,
 				3389A98C1C8FDA1A00BA2B74 /* YYMemoryCache.m in Sources */,
 				3389A98F1C8FDA1A00BA2B74 /* MKAnnotationView+YYWebImage.m in Sources */,
+				334A33DD1C97E40700DC8C3F /* MyAccountViewController.m in Sources */,
+				334A33E61C97E7E900DC8C3F /* MyAccountBalancesCell.m in Sources */,
 				3389A7F91C8FD88A00BA2B74 /* model.m in Sources */,
 				3389A9361C8FD88A00BA2B74 /* FMDatabaseQueue.m in Sources */,
 				336DC52F1C92B60000766E00 /* HJBConstant.m in Sources */,
 				3389AA3C1C901A7700BA2B74 /* XYRuntime.m in Sources */,
 				3389A99A1C8FDA1A00BA2B74 /* YYWebImageOperation.m in Sources */,
+				334A33D51C97AC1C00DC8C3F /* YYJBViewController.m in Sources */,
 				3389A4FC1C8FD52200BA2B74 /* main.m in Sources */,
 				3389A9961C8FDA1A00BA2B74 /* YYImageCoder.m in Sources */,
 				334E10341C966ADE00345503 /* NSObject+MKBlockAdditions.m in Sources */,
@@ -1001,6 +1069,10 @@
 			baseConfigurationReference = F7786B035A491068AF0AF36B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				GCC_PREFIX_HEADER = hjb/hjb.pch;
 				INFOPLIST_FILE = hjb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1016,6 +1088,10 @@
 			baseConfigurationReference = 9480258EC14CDE257FE1B56D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				GCC_PREFIX_HEADER = hjb/hjb.pch;
 				INFOPLIST_FILE = hjb/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

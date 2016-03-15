@@ -26,11 +26,8 @@ DEF_SINGLETON(RootViewController)
 
     [[self tabbar] selectTabItemWithIndex:ROOT_TYPE_DIS];
     [self TabSelectAtIndex:0 subIndex:0];
-    
 //    self.view.layer.shouldRasterize = YES;
-    
 }
-
 
 
 -(void)openURL:(NSString *)htmlurl//广告选择
@@ -79,11 +76,11 @@ DEF_SINGLETON(RootViewController)
             curview = self.ctr1.view;
             break;
         case ROOT_TYPE_SQUARE:
-            //            curview = self.squarectr.view;
+            curview = self.ctr2.view;
             break;
             
         case ROOT_TYPE_MINE:
-            //            curview = self.minectr.view;
+            curview = self.ctr3.view;
             break;
         default:
             break;
@@ -171,4 +168,19 @@ DEF_SINGLETON(RootViewController)
     return _ctr1;
 }
 
+-(MyAccountViewController *)ctr2
+{
+    if (!_ctr2) {
+        _ctr2 = [MyAccountViewController new];
+    }
+    return _ctr2;
+}
+
+-(TradingRecordyViewController *)ctr3
+{
+    if (!_ctr3) {
+        _ctr3 = [TradingRecordyViewController new];
+    }
+    return _ctr3;
+}
 @end

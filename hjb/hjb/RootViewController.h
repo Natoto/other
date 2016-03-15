@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HomeViewController.h"
+#import "MyAccountViewController.h"
+#import "TradingRecordyViewController.h"
 #import "BaseViewController.h"
 typedef enum : NSUInteger {
     ROOT_TYPE_DIS,
@@ -17,7 +19,9 @@ typedef enum : NSUInteger {
 
 @interface RootViewController : BaseViewController
 AS_SINGLETON(RootViewController)
-@property (nonatomic,strong ) HomeViewController * ctr1;
+@property (nonatomic,strong) HomeViewController * ctr1;
+@property (nonatomic,strong) MyAccountViewController * ctr2;
+@property (nonatomic,strong) TradingRecordyViewController * ctr3;
 @property (assign, nonatomic) ROOT_TYPE          current_root_type;
 
 -(void)openURL:(NSString *)htmlurl;//广告选择

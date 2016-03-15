@@ -207,8 +207,7 @@
                                     <exclude reference="kc4-aL-gw8"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="0.0" y="153" width="384" height="44"/>
+                            <variation key="heightClass=regular-widthClass=compact">
                                 <mask key="constraints">
                                     <include reference="kc4-aL-gw8"/>
                                 </mask>
@@ -239,19 +238,18 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="Isy-jH-AKJ"/>
+                            <exclude reference="4iR-cE-jbQ"/>
+                            <exclude reference="UB9-CP-99C"/>
+                            <exclude reference="do2-wy-d7r"/>
                             <exclude reference="45b-7g-Tfu"/>
                             <exclude reference="DPi-SY-uHd"/>
                             <exclude reference="OJx-99-aO2"/>
                             <exclude reference="Jfc-x1-Lgj"/>
                             <exclude reference="Trb-dG-6tJ"/>
                             <exclude reference="xeA-eE-hqj"/>
-                            <exclude reference="4iR-cE-jbQ"/>
-                            <exclude reference="UB9-CP-99C"/>
-                            <exclude reference="do2-wy-d7r"/>
                         </mask>
                     </variation>
-                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="0.0" y="46" width="400" height="338"/>
+                    <variation key="heightClass=regular-widthClass=compact">
                         <mask key="subviews">
                             <include reference="K3L-kd-QeG"/>
                             <include reference="i0K-NN-tan"/>
@@ -259,15 +257,15 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="Isy-jH-AKJ"/>
+                            <include reference="4iR-cE-jbQ"/>
+                            <include reference="UB9-CP-99C"/>
+                            <include reference="do2-wy-d7r"/>
                             <include reference="45b-7g-Tfu"/>
                             <include reference="DPi-SY-uHd"/>
                             <include reference="OJx-99-aO2"/>
                             <include reference="Jfc-x1-Lgj"/>
                             <include reference="Trb-dG-6tJ"/>
                             <include reference="xeA-eE-hqj"/>
-                            <include reference="4iR-cE-jbQ"/>
-                            <include reference="UB9-CP-99C"/>
-                            <include reference="do2-wy-d7r"/>
                         </mask>
                     </variation>
                 </view>

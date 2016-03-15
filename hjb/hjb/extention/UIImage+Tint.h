@@ -33,4 +33,7 @@
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
 - (UIImage *)imageByApplyingAlpha:(CGFloat) alpha;
+
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size radius:(NSInteger)r;
++ (UIImage *)createRoundedRectImage:(UIImage*)image size:(CGSize)size radius:(NSInteger)r;
 @end
