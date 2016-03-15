@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3049BE2DB348F422E1048259'
+               BlueprintIdentifier = '5A08909E15EE692E110C4EA9'
                BlueprintName = 'HBKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libHBKit.a'>

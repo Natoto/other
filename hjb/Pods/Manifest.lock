@@ -20,12 +20,8 @@ PODS:
   - AFNetworking/UIKit (2.6.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - ARChromeActivity (1.0.2)
   - HBKit (0.4.1):
     - MJRefresh (~> 2.2.0)
-  - KINWebBrowser (1.2.5):
-    - ARChromeActivity (= 1.0.2)
-    - TUSafariActivity (= 1.0.2)
   - Masonry (0.6.3)
   - MBProgressHUD (0.9.1)
   - MJRefresh (2.2.1)
@@ -36,12 +32,10 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
-  - TUSafariActivity (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.1)
   - HBKit (from `https://github.com/Natoto/HBFastTableViewCotroller.git`, commit `f6fa389e763f55f9b05025c1247293c0ce146a64`)
-  - KINWebBrowser (~> 1.2.5)
   - Masonry (~> 0.6.3)
   - MBProgressHUD (~> 0.9.1)
   - ReactiveCocoa
@@ -58,13 +52,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
-  ARChromeActivity: 6488aedc8dd0624b103ea8caf6218e52692aaf77
   HBKit: 9cafe188289d3747288dcba970da7ad73f871897
-  KINWebBrowser: 773e75882717d735cc37772cf71d5eb2b28554fe
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJRefresh: c3fa0387e8e97a11a9666639d2f815607edd1c2f
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
-  TUSafariActivity: 32e3e5dc9123e5533a42d41e1c3246d12911a4a2
 
 COCOAPODS: 0.39.0
