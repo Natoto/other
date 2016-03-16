@@ -78,7 +78,7 @@ _OBJ.layer.borderWidth = _WIDTH;
 //navigationbar 高度
 #define HEIGHT_NAVIGATIONBAR 64.0
 #define HEIGHT_NAVIGATIONCTR [UIScreen mainScreen].bounds.size.height - HEIGHT_NAVIGATIONBAR
-#define HEIGHT_TABBAR  50.0
+#define HEIGHT_TABBAR  49.0
 
 #define UISCREEN_BOUNDS ([UIScreen mainScreen].bounds)
 #define UISCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)

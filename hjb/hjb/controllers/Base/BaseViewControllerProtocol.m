@@ -12,7 +12,7 @@
 #import "HBNavigationbar.h"
 #import "HBSignalBus.h"
 #import "NSObject+HBHUD.h"
-
+#import <Masonry/Masonry.h>
 
 @implementation HBBaseViewController(BaseViewControllerProtocol)
 @dynamic navigationbar;
@@ -94,6 +94,10 @@ static char const key_navigationbar = 't';
     if (!toolsbar) {
         toolsbar = [HBNavigationbar navigationtoolbar];
         [self.view addSubview:toolsbar];
+        [toolsbar mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.bottom.right.equalTo(self.view).offset(0);
+            make.height.equalTo(@44);
+        }];
         [self setNavigationtoolsbar:toolsbar];
     }
     return toolsbar;
@@ -113,8 +117,14 @@ static char const key_navigationbar = 't';
         navbar = [self.view viewWithTag:0x1437];
         if (!navbar) {
             navbar = [HBNavigationbar navigationbar];
-            navbar.backgroundColor = [UIColor blackColor];//PENG_COLOR_NAVIGATIONBAR;//KT_HEXCOLOR(0xffb612);
+            navbar.backgroundColor = [UIColor blackColor];
             [self.view addSubview:navbar];
+            self.view.autoresizesSubviews = YES;
+            [navbar mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.left.right.equalTo(self.view).offset(0);
+                make.height.equalTo(@64);
+            }];
+//            navbar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleRightMargin| UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleWidth;
             navbar.tag = 0x1437;
         }
         [self setNavigationbar:navbar];

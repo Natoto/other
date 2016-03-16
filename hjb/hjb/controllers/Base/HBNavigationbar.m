@@ -6,10 +6,9 @@
 //  Copyright (c) 2015年 BooB. All rights reserved.
 //
 
-#import "HBNavigationbar.h"
-//#import "PENG_Define.h"
-//#import "ToolsFunc.h"
-//#import "UIImage+Tint.h"
+#import "HBNavigationbar.h" 
+//#import <Masonry/Masonry.h>
+
 @interface HBNavigationbar()
 {
     CALayer *topLayer;
@@ -34,6 +33,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.autoresizesSubviews = YES;
         self.backgroundColor = [UIColor colorWithRed:234./255.0 green:234./255.0 blue:234./255.0 alpha:1.0f];
         [self addSubview:self.leftItem];
         [self addSubview:self.rightItem];
@@ -42,13 +42,11 @@
         CGFloat BAR_HEIGHT = 44;
         CGFloat ITEM_HEIGHT = 44;
         CGFloat STATUS_HEIGHT = 20;
-        
         [self drawbottomlinelayer];
         [self leftItem];
         if (self.leftItem) {
             self.leftItem.frame = CGRectMake(10, 5, ITEM_HEIGHT, ITEM_HEIGHT);
         }
-        
         if (self.rightItem) {
             self.rightItem.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 50 , 0, ITEM_HEIGHT, BAR_HEIGHT);
         }
@@ -206,6 +204,7 @@
          _titleView = titleView;
         _titleView.frame = frame;
         [self addSubview:_titleView];
+        [_titleView setAutoresizingMask:UIViewAutoresizingFlexibleWidth] ;
     }
 }
 
@@ -298,6 +297,8 @@
         button.frame= _leftItem.frame;
         [_leftItem removeFromSuperview];
         _leftItem = button;
+        [self.leftItem setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|
+         UIViewAutoresizingFlexibleWidth] ;
         [self addSubview:_leftItem];
     }
     else
@@ -306,6 +307,8 @@
         button.frame= _rightItem.frame;
         [_rightItem removeFromSuperview];
         _rightItem = button;
+        [self.rightItem setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin|
+         UIViewAutoresizingFlexibleWidth] ;
         [self addSubview:_rightItem];
     }
     return button;

@@ -11,6 +11,7 @@
 #import "UIView+Transition.h"
 #import "LoginModel.h" 
 #import "HBWebBrowserViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface RootViewController ()<RKTabViewDelegate>
 @property(nonatomic,strong) RKTabView * tabbar;
@@ -124,7 +125,6 @@ DEF_SINGLETON(RootViewController)
         RKTabItem *faxian = [RKTabItem createUsualItemWithImageEnabled:[UIImage imageNamed:@"home2"] imageDisabled:[UIImage imageNamed:@"home1"]];
         faxian.titleString = @"首页";
         faxian.enableTitleFontColor = [UIColor orangeColor];
-//        faxian.titleFontColor
         faxian.tabState = TabStateEnabled;
         
         RKTabItem *huodong = [RKTabItem createUsualItemWithImageEnabled:[UIImage imageNamed:@"myaccount2"] imageDisabled:[UIImage imageNamed:@"myaccount1"]];
@@ -151,6 +151,11 @@ DEF_SINGLETON(RootViewController)
         }
         _tabbar = _tabViewSocial;
         [self.view addSubview:_tabbar];
+        
+        [_tabbar mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.left.right.equalTo(self.view).offset(0);
+            make.height.equalTo(@50);
+        }];
     }
     return _tabbar;
 }

@@ -48,7 +48,7 @@ AS_CELL_STRUCT_COMMON(ads)
     
     [self.navigationbar setrightBarButtonItemWithTitle:righttitle target:self selector:@selector(showSetting:)];
     
-    self.tableView.contentInset = UIEdgeInsetsMake(HEIGHT_NAVIGATIONBAR, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(HEIGHT_NAVIGATIONBAR, 0, HEIGHT_TABBAR, 0);
     TABLEVIEW_REGISTERXIBCELL_CLASS(self.tableView, @"HomeHeaderCell")
     TABLEVIEW_REGISTERXIBCELL_CLASS(self.tableView, @"HomeFunctionsCell")
     
