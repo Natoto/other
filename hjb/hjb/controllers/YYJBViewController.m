@@ -37,7 +37,7 @@
 
 GET_CELL_SELECT_ACTION(cellstruct)
 {
-    
+    [self openURLString:@"YYJBPayInfoViewController" forkey:@"YYJBPayInfoViewController" parameters:nil];
 }
 
 

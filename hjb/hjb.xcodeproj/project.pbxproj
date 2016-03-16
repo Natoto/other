@@ -116,6 +116,13 @@
 		3389AA541C901F2B00BA2B74 /* NSObject+HBHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3389AA501C901F2B00BA2B74 /* NSObject+HBHUD.m */; };
 		3389AA581C902A4300BA2B74 /* HomeHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3389AA561C902A4300BA2B74 /* HomeHeaderCell.m */; };
 		3389AA591C902A4300BA2B74 /* HomeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3389AA571C902A4300BA2B74 /* HomeHeaderCell.xib */; };
+		33B3AD661C99157E00E4486A /* YYJBPayInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B3AD651C99157E00E4486A /* YYJBPayInfoViewController.m */; };
+		33B3AD6A1C99161400E4486A /* YYJBInfoHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B3AD681C99161400E4486A /* YYJBInfoHeaderCell.m */; };
+		33B3AD6B1C99161400E4486A /* YYJBInfoHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B3AD691C99161400E4486A /* YYJBInfoHeaderCell.xib */; };
+		33B3AD6E1C9941AB00E4486A /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B3AD6D1C9941AB00E4486A /* NSString+Addition.m */; };
+		33B3AD711C994BB100E4486A /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B3AD701C994BB100E4486A /* TextFieldCell.m */; };
+		33B3AD741C994E3500E4486A /* TextInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B3AD731C994E3500E4486A /* TextInputAccessoryView.m */; };
+		33B3AD781C99681200E4486A /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B3AD771C99681200E4486A /* ButtonCell.m */; };
 		789AC0391C9839DC00AB10A8 /* HBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 789AC0381C9839DC00AB10A8 /* HBRouter.m */; };
 		789AC03C1C983C1500AB10A8 /* HJBRouterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 789AC03B1C983C1500AB10A8 /* HJBRouterHelper.m */; };
 		CD388CE5E36633B8B12F5DD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD30A45C073976E762449478 /* libPods.a */; };
@@ -330,6 +337,20 @@
 		3389AA551C902A4300BA2B74 /* HomeHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderCell.h; sourceTree = "<group>"; };
 		3389AA561C902A4300BA2B74 /* HomeHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderCell.m; sourceTree = "<group>"; };
 		3389AA571C902A4300BA2B74 /* HomeHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderCell.xib; sourceTree = "<group>"; };
+		33B3AD641C99157E00E4486A /* YYJBPayInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJBPayInfoViewController.h; sourceTree = "<group>"; };
+		33B3AD651C99157E00E4486A /* YYJBPayInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJBPayInfoViewController.m; sourceTree = "<group>"; };
+		33B3AD671C99161400E4486A /* YYJBInfoHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYJBInfoHeaderCell.h; sourceTree = "<group>"; };
+		33B3AD681C99161400E4486A /* YYJBInfoHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYJBInfoHeaderCell.m; sourceTree = "<group>"; };
+		33B3AD691C99161400E4486A /* YYJBInfoHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYJBInfoHeaderCell.xib; sourceTree = "<group>"; };
+		33B3AD6C1C9941AB00E4486A /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
+		33B3AD6D1C9941AB00E4486A /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		33B3AD6F1C994BB100E4486A /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		33B3AD701C994BB100E4486A /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
+		33B3AD721C994E3500E4486A /* TextInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputAccessoryView.h; sourceTree = "<group>"; };
+		33B3AD731C994E3500E4486A /* TextInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputAccessoryView.m; sourceTree = "<group>"; };
+		33B3AD751C994E6C00E4486A /* EditCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCellProtocol.h; sourceTree = "<group>"; };
+		33B3AD761C99681200E4486A /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		33B3AD771C99681200E4486A /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
 		789AC0371C9839DC00AB10A8 /* HBRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBRouter.h; sourceTree = "<group>"; };
 		789AC0381C9839DC00AB10A8 /* HBRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBRouter.m; sourceTree = "<group>"; };
 		789AC03A1C983C1500AB10A8 /* HJBRouterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBRouterHelper.h; sourceTree = "<group>"; };
@@ -535,6 +556,9 @@
 		3389A7DB1C8FD88A00BA2B74 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				33B3AD671C99161400E4486A /* YYJBInfoHeaderCell.h */,
+				33B3AD681C99161400E4486A /* YYJBInfoHeaderCell.m */,
+				33B3AD691C99161400E4486A /* YYJBInfoHeaderCell.xib */,
 				334A33F81C97FE4C00DC8C3F /* CashierDeskPayWayCell.h */,
 				334A33F91C97FE4C00DC8C3F /* CashierDeskPayWayCell.m */,
 				334A33FA1C97FE4C00DC8C3F /* CashierDeskPayWayCell.xib */,
@@ -643,6 +667,8 @@
 				3389A9A81C90182E00BA2B74 /* HomeViewController.m */,
 				334A33F01C97FB5F00DC8C3F /* CashierDeskViewController.h */,
 				334A33F11C97FB5F00DC8C3F /* CashierDeskViewController.m */,
+				33B3AD641C99157E00E4486A /* YYJBPayInfoViewController.h */,
+				33B3AD651C99157E00E4486A /* YYJBPayInfoViewController.m */,
 				334A33DB1C97E40700DC8C3F /* MyAccountViewController.h */,
 				334A33DC1C97E40700DC8C3F /* MyAccountViewController.m */,
 				334A33ED1C97EE0A00DC8C3F /* TradingRecordyViewController.h */,
@@ -672,6 +698,8 @@
 		3389A99C1C8FDB1A00BA2B74 /* extention */ = {
 			isa = PBXGroup;
 			children = (
+				33B3AD6C1C9941AB00E4486A /* NSString+Addition.h */,
+				33B3AD6D1C9941AB00E4486A /* NSString+Addition.m */,
 				334E10351C96899F00345503 /* UIButton+Alignment.h */,
 				334E10361C96899F00345503 /* UIButton+Alignment.m */,
 				334E10311C966ADE00345503 /* MKBlockAdditions.h */,
@@ -716,6 +744,13 @@
 				3389AA191C9019E400BA2B74 /* ReusabledXIBView.m */,
 				3389AA1A1C9019E400BA2B74 /* BubbleStruct.h */,
 				3389AA1B1C9019E400BA2B74 /* BubbleStruct.m */,
+				33B3AD751C994E6C00E4486A /* EditCellProtocol.h */,
+				33B3AD6F1C994BB100E4486A /* TextFieldCell.h */,
+				33B3AD701C994BB100E4486A /* TextFieldCell.m */,
+				33B3AD761C99681200E4486A /* ButtonCell.h */,
+				33B3AD771C99681200E4486A /* ButtonCell.m */,
+				33B3AD721C994E3500E4486A /* TextInputAccessoryView.h */,
+				33B3AD731C994E3500E4486A /* TextInputAccessoryView.m */,
 				3389AA1E1C9019E400BA2B74 /* BaseViewControllerProtocol.h */,
 				3389AA1F1C9019E400BA2B74 /* BaseViewControllerProtocol.m */,
 				3389AA201C9019E400BA2B74 /* BaseViewController.h */,
@@ -833,6 +868,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B3AD6B1C99161400E4486A /* YYJBInfoHeaderCell.xib in Resources */,
 				333F78541C916E11000B7638 /* Default@2x.png in Resources */,
 				334A33EC1C97E87900DC8C3F /* MyAccountChargeCell.xib in Resources */,
 				333F784A1C912A18000B7638 /* HomeFunctionsCell.xib in Resources */,
@@ -911,6 +947,7 @@
 				3389A5021C8FD52200BA2B74 /* RootViewController.m in Sources */,
 				3389AA351C9019E400BA2B74 /* BaseTableViewCell.m in Sources */,
 				3389AA391C901A3C00BA2B74 /* UIViewAdditions.m in Sources */,
+				33B3AD6E1C9941AB00E4486A /* NSString+Addition.m in Sources */,
 				334A33EF1C97EE0A00DC8C3F /* TradingRecordyViewController.m in Sources */,
 				3389A7FA1C8FD88A00BA2B74 /* PENGClient.m in Sources */,
 				3389AA341C9019E400BA2B74 /* PKProtocolExtension.m in Sources */,
@@ -972,6 +1009,7 @@
 				3389A98F1C8FDA1A00BA2B74 /* MKAnnotationView+YYWebImage.m in Sources */,
 				789AC03C1C983C1500AB10A8 /* HJBRouterHelper.m in Sources */,
 				334A33DD1C97E40700DC8C3F /* MyAccountViewController.m in Sources */,
+				33B3AD781C99681200E4486A /* ButtonCell.m in Sources */,
 				334A33E61C97E7E900DC8C3F /* MyAccountBalancesCell.m in Sources */,
 				3389A7F91C8FD88A00BA2B74 /* model.m in Sources */,
 				3389A9361C8FD88A00BA2B74 /* FMDatabaseQueue.m in Sources */,
@@ -980,12 +1018,15 @@
 				3389A99A1C8FDA1A00BA2B74 /* YYWebImageOperation.m in Sources */,
 				334A33D51C97AC1C00DC8C3F /* YYJBViewController.m in Sources */,
 				3389A4FC1C8FD52200BA2B74 /* main.m in Sources */,
+				33B3AD6A1C99161400E4486A /* YYJBInfoHeaderCell.m in Sources */,
 				3389A9961C8FDA1A00BA2B74 /* YYImageCoder.m in Sources */,
 				334E10341C966ADE00345503 /* NSObject+MKBlockAdditions.m in Sources */,
 				3389A98D1C8FDA1A00BA2B74 /* _YYWebImageSetter.m in Sources */,
 				334E102D1C966A9B00345503 /* UIAlertView+MKBlockAdditions.m in Sources */,
 				336DC5191C92800400766E00 /* UIView+Tools.m in Sources */,
+				33B3AD741C994E3500E4486A /* TextInputAccessoryView.m in Sources */,
 				3389A98B1C8FDA1A00BA2B74 /* YYKVStorage.m in Sources */,
+				33B3AD711C994BB100E4486A /* TextFieldCell.m in Sources */,
 				3389A9391C8FD88A00BA2B74 /* YTKKeyValueStore.m in Sources */,
 				3389A7FD1C8FD88A00BA2B74 /* HBActiveObject.m in Sources */,
 				3389A9941C8FDA1A00BA2B74 /* YYFrameImage.m in Sources */,
@@ -997,6 +1038,7 @@
 				333F78581C916E76000B7638 /* SettingViewController.m in Sources */,
 				336DC52A1C92B2BE00766E00 /* YBChargeViewController.m in Sources */,
 				3389AA311C9019E400BA2B74 /* BaseViewController.m in Sources */,
+				33B3AD661C99157E00E4486A /* YYJBPayInfoViewController.m in Sources */,
 				3389AA541C901F2B00BA2B74 /* NSObject+HBHUD.m in Sources */,
 				789AC0391C9839DC00AB10A8 /* HBRouter.m in Sources */,
 			);

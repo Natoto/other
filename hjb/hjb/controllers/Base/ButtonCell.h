@@ -1,0 +1,13 @@
+//
+//  ButtonCell.h
+//  hjb
+//
+//  Created by zeno on 16/3/16.
+//  Copyright © 2016年 peng. All rights reserved.
+//
+
+#import "BaseTableViewCell.h"
+
+@interface ButtonCell : BaseTableViewCell
+@property(nonatomic,strong) UIButton * button;
+@end
