@@ -39,6 +39,9 @@ GET_CELL_SELECT_ACTION(cellstruct)
             [self.navigationController popToRootViewControllerAnimated:NO];
         }];
     }
+    if ([cellstruct.title isEqualToString:@"修改密保手机"]) {
+        [self openURLString:@"ChangeMSecureViewController" forkey:@"ChangeMSecureViewController" parameters:nil];
+    }
 } 
 
 - (void)didReceiveMemoryWarning {

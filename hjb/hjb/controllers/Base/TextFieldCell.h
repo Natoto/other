@@ -9,7 +9,5 @@
 #import "BaseTableViewCell.h"
 #import "EditCellProtocol.h"
 @interface TextFieldCell : BaseTableViewCell
-
-@property(nonatomic,retain) UIButton * AcessoryButton;
 @property(nonatomic,strong) UITextField * txt_content;
 @end

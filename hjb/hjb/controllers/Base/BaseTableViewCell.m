@@ -8,10 +8,42 @@
 
 #import "BaseTableViewCell.h"
 #import "UIImageView+HBWebCache.h"
-
+@interface BaseTableViewCell()
+@end
 @implementation BaseTableViewCell
 
+//-(UIButton *)hb_AcessoryButton:(BaseTableViewCell *)cell
+//{
+//    if (self.delegate && [self.delegate respondsToSelector:@selector(hb_AcessoryButton:)]) {
+//        _AcessoryButton = [self.delegate hb_AcessoryButton:self];
+//        return [self.delegate hb_AcessoryButton:self];
+//    }
+//    return self.AcessoryButton;
+//}
 
+-(void)setcellRightValue:(NSString *)value
+{
+    if (value.length) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(hb_AcessoryButton:)]) {
+            _AcessoryButton = [self.delegate hb_AcessoryButton:self];
+        }
+        if (self.AcessoryButton) {
+            [self.AcessoryButton setTitle:value forState:UIControlStateNormal];
+            self.accessoryView = self.AcessoryButton;
+        }
+    }
+}
+
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        UIView *view_bg = [[UIView alloc]initWithFrame:self.frame];
+        view_bg.backgroundColor = [UIColor grayColor];
+        self.selectedBackgroundView = view_bg;
+    }
+    return self;
+}
 -(void)setcellProfile:(NSString *)profile
 {
     if (!profile) {
@@ -47,5 +79,19 @@
     if (detailcolor && [[detailcolor class] isSubclassOfClass:[UIColor class]]) {
         self.detailTextLabel.textColor = detailcolor;
     }
+}
+
+
+-(UIButton *)AcessoryButton
+{
+    if (!_AcessoryButton) {
+        UIButton * button = [UIButton  buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(0, 0, 80, 25);
+        [button setTitle:@"已关注" forState:UIControlStateSelected];
+        [button.titleLabel setFont:[UIFont systemFontOfSize:12] ];
+        [button setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+        _AcessoryButton = button;
+    }
+    return _AcessoryButton;
 }
 @end

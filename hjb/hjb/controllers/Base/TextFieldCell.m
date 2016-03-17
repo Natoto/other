@@ -35,15 +35,12 @@
     self.txt_content.text = title;
 }
 
--(void)setcellRightValue:(NSString *)value
+-(void)setcelldetailtitle:(NSString *)detailtitle
 {
-    if (value) {
-        [self.AcessoryButton setTitle:value forState:UIControlStateNormal];
-        self.accessoryView = self.AcessoryButton;
+    if (detailtitle) {
+        self.txt_content.placeholder = detailtitle;
     }
 }
-
-
 
 -(void)setcellplaceholder:(NSString *)placeholder
 {
@@ -79,8 +76,6 @@
 -(void)setcelldictionary:(NSMutableDictionary *)dictionary
 {
     [super setcelldictionary:dictionary];
-    
-  
     self.txt_content.placeholder = [dictionary objectForKey:key_cellstruct_placehoder];
     self.txt_content.clearButtonMode = UITextFieldViewModeWhileEditing;
     
@@ -106,31 +101,6 @@
     if (editable) {
         self.txt_content.enabled = editable.boolValue;
     }
-    
 }
-//-(TextInputAccessoryView  *)inputAccessoryView
-//{
-//    if (!_inputAccessoryView) {
-//        _inputAccessoryView = [TextInputAccessoryView  defaultAccessoryView];
-//        [_inputAccessoryView addTarget:self action:@selector(done:) forControlEvents:UIControlEventTouchUpInside];
-//    }
-//    return _inputAccessoryView;
-//}
-
-
--(UIButton *)AcessoryButton
-{
-    if (!_AcessoryButton) {
-        UIButton * button = [UIButton  buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(0, 0, 55, 22);
-        [button setTitle:@"已关注" forState:UIControlStateSelected];
-        [button.titleLabel setFont:[UIFont systemFontOfSize:12] ];
-        [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-//        [button addTarget:self action:@selector(AcessoryButtonTap:) forControlEvents:UIControlEventTouchUpInside];
-        _AcessoryButton = button;
-    }
-    return _AcessoryButton;
-}
-
 
 @end

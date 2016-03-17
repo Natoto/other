@@ -32,23 +32,30 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - yytext (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.1)
-  - HBKit (from `https://github.com/Natoto/HBFastTableViewCotroller.git`, commit `bbe914a1bdd8d5602e1d1b3c1d500733ad4a9611`)
+  - HBKit (from `https://github.com/Natoto/HBFastTableViewCotroller.git`, commit `8d5a7a5f22638226a0f130985f420f14c0e175d8`)
   - Masonry (~> 0.6.3)
   - MBProgressHUD (~> 0.9.1)
   - ReactiveCocoa
+  - yytext (from `https://github.com/Natoto/yytextdemo.git`)
 
 EXTERNAL SOURCES:
   HBKit:
-    :commit: bbe914a1bdd8d5602e1d1b3c1d500733ad4a9611
+    :commit: 8d5a7a5f22638226a0f130985f420f14c0e175d8
     :git: https://github.com/Natoto/HBFastTableViewCotroller.git
+  yytext:
+    :git: https://github.com/Natoto/yytextdemo.git
 
 CHECKOUT OPTIONS:
   HBKit:
-    :commit: bbe914a1bdd8d5602e1d1b3c1d500733ad4a9611
+    :commit: 8d5a7a5f22638226a0f130985f420f14c0e175d8
     :git: https://github.com/Natoto/HBFastTableViewCotroller.git
+  yytext:
+    :commit: ed99f0b558e0e1a5dd4131f3f38d87b556eef73c
+    :git: https://github.com/Natoto/yytextdemo.git
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
@@ -57,5 +64,6 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJRefresh: c3fa0387e8e97a11a9666639d2f815607edd1c2f
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  yytext: abffc3893d90c9d7d6115791a227dfb84c9c8b7a
 
 COCOAPODS: 0.39.0

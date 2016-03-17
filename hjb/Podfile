@@ -3,5 +3,6 @@ pod 'ReactiveCocoa'
 pod 'AFNetworking', '~> 2.6.1'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'Masonry', '~> 0.6.3'
-pod 'HBKit', :git => 'https://github.com/Natoto/HBFastTableViewCotroller.git',:commit => 'bbe914a1bdd8d5602e1d1b3c1d500733ad4a9611'
-#pod 'KINWebBrowser', '~> 1.2.5'
+pod 'HBKit', :git => 'https://github.com/Natoto/HBFastTableViewCotroller.git',:commit => '8d5a7a5f22638226a0f130985f420f14c0e175d8'
+pod 'yytext', :git => 'https://github.com/Natoto/yytextdemo.git'
+#注释

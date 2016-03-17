@@ -17,11 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"交易记录";
-    
     [self loadplistConfig:@"TradingRecordyViewController"];
-    
+     
 }
 
+GET_CELL_SELECT_ACTION(cellstruct)
+{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
