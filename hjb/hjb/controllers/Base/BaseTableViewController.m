@@ -75,7 +75,7 @@ ON_HBSIGNAL(HTTPSEngine, networkerror, notify)
         CELL_STRUCT * cellstruct = [[CELL_STRUCT alloc] initWithPlistDictionary:adic];
         [self.dataDictionary setObject:cellstruct forKey:key];
     }
-    NSLog(@"")
+    NSLog(@"dic:%@",dic);
 }
 
 -(void)viewDidLoad
