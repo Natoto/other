@@ -4,75 +4,85 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
+		<key>Pods-AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>HBKit.xcscheme</key>
+		<key>Pods-HBKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>MBProgressHUD.xcscheme</key>
+		<key>Pods-MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>MJRefresh.xcscheme</key>
+		<key>Pods-MJRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Masonry.xcscheme</key>
+		<key>Pods-Masonry.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-yytext.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>ReactiveCocoa.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<key>06EBA73BCCF808CA2F563059</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<key>0D4511393DDE50694907CC56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA3F63F3D113B340D806B4109CDA77FB</key>
+		<key>11E518B4F7EE2C0324CB1FD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BFA6D6D6625BD63485D3B4C80604BC1E</key>
+		<key>309E897341A6616C84F9AE40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E33C6F7D3237CFEBEACF682095E803D7</key>
+		<key>5EC50BFFBF7C587940404475</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F99981312B3901006F2253C1658B1955</key>
+		<key>6E162AB2489B13C7B9706B15</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
+		<key>845CB17F9D9617FEFF6B8437</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7F0886BA3FE9D6F78D1335C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

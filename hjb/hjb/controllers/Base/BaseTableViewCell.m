@@ -33,7 +33,6 @@
         }
     }
 }
-
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -60,25 +59,47 @@
 -(void)setcelldictionary:(NSMutableDictionary *)dictionary
 {
     [super setcelldictionary:dictionary];
-    
-    UIFont * titlefont = [dictionary objectForKey:key_cellstruct_titleuifont];
-    if (titlefont && [[titlefont class] isSubclassOfClass:[UIFont class]]) {
-        self.textLabel.font = titlefont;
+//    
+//    UIFont * titlefont = [dictionary objectForKey:key_cellstruct_titleuifont];
+//    if (titlefont && [[titlefont class] isSubclassOfClass:[UIFont class]]) {
+//        self.textLabel.font = titlefont;
+//    }
+//    
+//    UIColor * titlecolor = [dictionary objectForKey:key_cellstruct_titleuicolor];
+//    if (titlecolor && [[titlecolor class] isSubclassOfClass:[UIColor class]]) {
+//        self.textLabel.textColor = titlecolor;
+//    }
+//    UIFont * detailfont = [dictionary objectForKey:key_cellstruct_detailuifont];
+//    if (detailfont && [[detailfont class] isSubclassOfClass:[UIFont class]]) {
+//        self.detailTextLabel.font = detailfont;
+//    }
+//    
+//    UIColor * detailcolor = [dictionary objectForKey:key_cellstruct_detailuicolor];
+//    if (detailcolor && [[detailcolor class] isSubclassOfClass:[UIColor class]]) {
+//        self.detailTextLabel.textColor = detailcolor;
+//    }
+    //----- from plist string --------
+    NSNumber * titlefontsize = [dictionary objectForKey:key_cellstruct_titleuifont];
+    if (titlefontsize && [[titlefontsize class] isSubclassOfClass:[NSNumber class]]) {
+        self.textLabel.font = [UIFont systemFontOfSize:titlefontsize.floatValue];// titlefont;
     }
     
-    UIColor * titlecolor = [dictionary objectForKey:key_cellstruct_titleuicolor];
-    if (titlecolor && [[titlecolor class] isSubclassOfClass:[UIColor class]]) {
-        self.textLabel.textColor = titlecolor;
+    NSString * titlecolorstr = [dictionary objectForKey:key_cellstruct_titleuicolor];
+    if (titlecolorstr && [[titlecolorstr class] isSubclassOfClass:[NSString class]]) {
+        self.textLabel.textColor = [CELL_STRUCT_Common colorWithStructKey:titlecolorstr];
     }
-    UIFont * detailfont = [dictionary objectForKey:key_cellstruct_detailuifont];
-    if (detailfont && [[detailfont class] isSubclassOfClass:[UIFont class]]) {
-        self.detailTextLabel.font = detailfont;
+    NSNumber * detailfontsize = [dictionary objectForKey:key_cellstruct_detailuifont];
+    if (detailfontsize && [[detailfontsize class] isSubclassOfClass:[NSNumber class]]) {
+        UIFont * font = [UIFont systemFontOfSize:detailfontsize.floatValue];
+        self.detailTextLabel.font = font;
     }
     
-    UIColor * detailcolor = [dictionary objectForKey:key_cellstruct_detailuicolor];
-    if (detailcolor && [[detailcolor class] isSubclassOfClass:[UIColor class]]) {
-        self.detailTextLabel.textColor = detailcolor;
+    NSString * detailcolorstr = [dictionary objectForKey:key_cellstruct_detailuicolor];
+    if (detailcolorstr && [[detailcolorstr class] isSubclassOfClass:[NSString class]]) {
+        UIColor * color = [CELL_STRUCT_Common colorWithStructKey:detailcolorstr];
+        self.detailTextLabel.textColor = color;
     }
+    
 }
 
 

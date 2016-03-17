@@ -9,19 +9,34 @@
 		<key>detailtitle</key>
 		<string>2016-03-16</string>
 		<key>cellclass</key>
-		<string>HBBaseTableViewCell</string>
+		<string>LeftRightUpDownLabelCell</string>
 		<key>picture</key>
 		<string>myaccount2</string>
 		<key>sel_selector_str</key>
 		<string>selectAction:</string>
+		<key>value</key>
+		<string>+0.02</string>
+		<key>subvalue2</key>
+		<string>交易成功</string>
+		<key>dictionary</key>
+		<dict>
+			<key>key_cellstruct_detailuicolor</key>
+			<string>gray</string>
+			<key>key_cellstruct_detailuifont</key>
+			<integer>12</integer>
+			<key>key_cellstruct_titleuicolor</key>
+			<string>black</string>
+			<key>key_cellstruct_titleuifont</key>
+			<integer>14</integer>
+		</dict>
 		<key>sectionheight</key>
 		<integer>20</integer>
 		<key>selectionStyle</key>
 		<true/>
 		<key>cellheight</key>
-		<real>44</real>
+		<integer>50</integer>
 		<key>accessory</key>
-		<true/>
+		<false/>
 		<key>CellStyleValue</key>
 		<integer>1</integer>
 		<key>showBottomLine</key>
@@ -38,8 +53,6 @@
 		<string></string>
 		<key>inputAccessoryView</key>
 		<string></string>
-		<key>dictionary</key>
-		<dict/>
 		<key>sectionfooter</key>
 		<string></string>
 		<key>rightComponts</key>
@@ -51,10 +64,6 @@
 		<key>titlecolor</key>
 		<string></string>
 		<key>sectionfont</key>
-		<string></string>
-		<key>value</key>
-		<string></string>
-		<key>subvalue2</key>
 		<string></string>
 		<key>xibvalue</key>
 		<string></string>
@@ -94,11 +103,13 @@
 		<key>title</key>
 		<string>充值2</string>
 		<key>detailtitle</key>
-		<string>2016-03-16</string>
+		<string>twetwetrw</string>
 		<key>cellclass</key>
-		<string>HBBaseTableViewCell</string>
+		<string>LeftUpDownRightLabelCell</string>
 		<key>picture</key>
 		<string>myaccount2</string>
+		<key>value</key>
+		<string>+0.02</string>
 		<key>sel_selector_str</key>
 		<string>selectAction:</string>
 		<key>sectionheight</key>
@@ -120,7 +131,16 @@
 		<key>imageRight</key>
 		<false/>
 		<key>dictionary</key>
-		<dict/>
+		<dict>
+			<key>key_cellstruct_detailuicolor</key>
+			<string>gray</string>
+			<key>key_cellstruct_detailuifont</key>
+			<integer>12</integer>
+			<key>key_cellstruct_titleuicolor</key>
+			<string>black</string>
+			<key>key_cellstruct_titleuifont</key>
+			<integer>14</integer>
+		</dict>
 		<key>tempvalue</key>
 		<string></string>
 		<key>titleLabelNumberOfLines</key>
@@ -133,7 +153,7 @@
 		<key>detailtitle</key>
 		<string>2016-03-16</string>
 		<key>cellclass</key>
-		<string>HBBaseTableViewCell</string>
+		<string>BaseTableViewCell</string>
 		<key>picture</key>
 		<string>myaccount2</string>
 		<key>sel_selector_str</key>
@@ -157,7 +177,16 @@
 		<key>imageRight</key>
 		<false/>
 		<key>dictionary</key>
-		<dict/>
+		<dict>
+			<key>key_cellstruct_detailuicolor</key>
+			<string>gray</string>
+			<key>key_cellstruct_detailuifont</key>
+			<integer>12</integer>
+			<key>key_cellstruct_titleuicolor</key>
+			<string>black</string>
+			<key>key_cellstruct_titleuifont</key>
+			<integer>14</integer>
+		</dict>
 		<key>tempvalue</key>
 		<string></string>
 		<key>titleLabelNumberOfLines</key>
