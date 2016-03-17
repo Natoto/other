@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33016F151C92CEA1003E8F7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33016F171C92CEA1003E8F7C /* Localizable.strings */; };
 		33016F291C92D206003E8F7C /* HBLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016F281C92D206003E8F7C /* HBLanguage.m */; };
+		331B92E81C9A5B4300395A72 /* TradingRecordyViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 331B92E71C9A5B4300395A72 /* TradingRecordyViewController.plist */; };
 		333F78491C912A18000B7638 /* HomeFunctionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F78471C912A18000B7638 /* HomeFunctionsCell.m */; };
 		333F784A1C912A18000B7638 /* HomeFunctionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333F78481C912A18000B7638 /* HomeFunctionsCell.xib */; };
 		333F784D1C913148000B7638 /* HBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F784C1C913148000B7638 /* HBButton.m */; };
@@ -136,6 +137,8 @@
 		33016F1D1C92D02F003E8F7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		33016F271C92D206003E8F7C /* HBLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLanguage.h; sourceTree = "<group>"; };
 		33016F281C92D206003E8F7C /* HBLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLanguage.m; sourceTree = "<group>"; };
+		331B92E71C9A5B4300395A72 /* TradingRecordyViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TradingRecordyViewController.plist; sourceTree = "<group>"; };
+		331B92E91C9A5C6900395A72 /* cellstruct.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = cellstruct.css; sourceTree = "<group>"; };
 		333F78461C912A18000B7638 /* HomeFunctionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFunctionsCell.h; sourceTree = "<group>"; };
 		333F78471C912A18000B7638 /* HomeFunctionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFunctionsCell.m; sourceTree = "<group>"; };
 		333F78481C912A18000B7638 /* HomeFunctionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeFunctionsCell.xib; sourceTree = "<group>"; };
@@ -421,6 +424,7 @@
 		3389A4FA1C8FD52200BA2B74 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				331B92E91C9A5C6900395A72 /* cellstruct.css */,
 				333F78521C916E11000B7638 /* Default@2x.png */,
 				333F78531C916E11000B7638 /* Default-568h@2x.png */,
 				3389A9A01C8FDC7700BA2B74 /* hjb.pch */,
@@ -673,6 +677,7 @@
 				334A33DC1C97E40700DC8C3F /* MyAccountViewController.m */,
 				334A33ED1C97EE0A00DC8C3F /* TradingRecordyViewController.h */,
 				334A33EE1C97EE0A00DC8C3F /* TradingRecordyViewController.m */,
+				331B92E71C9A5B4300395A72 /* TradingRecordyViewController.plist */,
 				334A33D01C97A6F000DC8C3F /* YYCommissionViewController.h */,
 				334A33D11C97A6F000DC8C3F /* YYCommissionViewController.m */,
 				334A33D31C97AC1C00DC8C3F /* YYJBViewController.h */,
@@ -882,6 +887,7 @@
 				333F785E1C917CBF000B7638 /* LoginViewController.xib in Resources */,
 				334A33F71C97FBCB00DC8C3F /* CashierDeskHeaderCell.xib in Resources */,
 				333F78551C916E11000B7638 /* Default-568h@2x.png in Resources */,
+				331B92E81C9A5B4300395A72 /* TradingRecordyViewController.plist in Resources */,
 				33016F151C92CEA1003E8F7C /* Localizable.strings in Resources */,
 				334E102A1C96576000345503 /* PhoneRechargeViewController.xib in Resources */,
 				336DC5341C92C09C00766E00 /* QBChargeViewController.xib in Resources */,

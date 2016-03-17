@@ -35,19 +35,19 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.1)
-  - HBKit (from `https://github.com/Natoto/HBFastTableViewCotroller.git`, commit `f6fa389e763f55f9b05025c1247293c0ce146a64`)
+  - HBKit (from `https://github.com/Natoto/HBFastTableViewCotroller.git`, commit `bbe914a1bdd8d5602e1d1b3c1d500733ad4a9611`)
   - Masonry (~> 0.6.3)
   - MBProgressHUD (~> 0.9.1)
   - ReactiveCocoa
 
 EXTERNAL SOURCES:
   HBKit:
-    :commit: f6fa389e763f55f9b05025c1247293c0ce146a64
+    :commit: bbe914a1bdd8d5602e1d1b3c1d500733ad4a9611
     :git: https://github.com/Natoto/HBFastTableViewCotroller.git
 
 CHECKOUT OPTIONS:
   HBKit:
-    :commit: f6fa389e763f55f9b05025c1247293c0ce146a64
+    :commit: bbe914a1bdd8d5602e1d1b3c1d500733ad4a9611
     :git: https://github.com/Natoto/HBFastTableViewCotroller.git
 
 SPEC CHECKSUMS:

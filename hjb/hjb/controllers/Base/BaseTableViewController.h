@@ -29,4 +29,11 @@ static NSString * key_cellstruct_sectionbguicolor = @"key_cellstruct_sectionuico
 @property (nonatomic,strong) NSNumber *  thiscreateTime;
 
 -(void)removeDataDictionaryForSection:(NSInteger)section;
+
+/**
+ *  从PLIST 文件中加载配置信息
+ *
+ *  @param plistname plist文件的名字
+ */
+-(void)loadplistConfig:(NSString *)plistname;
 @end
