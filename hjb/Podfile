@@ -1,8 +1,8 @@
 platform :ios,'7.0'
-pod 'ReactiveCocoa', '~>2.6.0'
+pod 'ReactiveCocoa'
 pod 'AFNetworking'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'Masonry', '~> 0.6.2'
-pod 'HBKit', :git => 'https://github.com/Natoto/HBFastTableViewCotroller.git',:commit => '77489306051b45bfae105f7095068a14be6d8eea'
+pod 'HBKit', :git => 'https://github.com/Natoto/HBFastTableViewCotroller.git',:commit => 'b96894f71d5d7c840679d85b1df69621bea79880'
 pod 'yytext', :git => 'https://github.com/Natoto/yytextdemo.git'
 #注释

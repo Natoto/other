@@ -47,6 +47,12 @@
     self.btn_action.layer.cornerRadius = 5;
     [self.btn_action setBackgroundImage:[UIImage imageWithColor:self.hjb_themecolor  size:CGSizeMake(1, 1)] forState:UIControlStateNormal ];
     
+    [[self.btn_action rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+       
+        if (self.delegate && [self.delegate respondsToSelector:@selector(hbtableViewCell:subView:TapWithTag:)]) {
+            [self.delegate hbtableViewCell:self subView:self.btn_action TapWithTag:0x11];
+        }
+    }];
     self.layer.shouldRasterize = YES;
     self.layer.rasterizationScale = [UIScreen mainScreen].scale;
 }

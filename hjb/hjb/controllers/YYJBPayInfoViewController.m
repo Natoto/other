@@ -11,6 +11,7 @@
 #import "TextFieldCell.h"
 #import "ButtonCell.h"
 #import "NSString+Addition.h"
+#import "RootViewController.h"
 
 @interface YYJBPayInfoViewController ()
 AS_CELL_STRUCT_COMMON(header)
@@ -46,14 +47,21 @@ AS_CELL_STRUCT_COMMON(pay)
 //    self.tableView.bounces = NO;
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
+@class CashierDeskViewController;
 GET_CELL_SELECT_ACTION(cellstruct)
 {
-    
+    if (cellstruct == self.cell_struct_tips_risk) {
+        NSString * path = [[NSBundle mainBundle] pathForResource:@"hjbprotocol" ofType:@"html"];
+        [[RootViewController sharedInstance] openURL:path];
+    }
+    else if(cellstruct == self.cell_struct_pay)
+    {
+        [self openURLString:@"CashierDeskViewController" forkey:@"CashierDeskViewController" parameters:nil];
+    }
 }
 
 

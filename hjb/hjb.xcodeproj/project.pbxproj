@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		33016F151C92CEA1003E8F7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33016F171C92CEA1003E8F7C /* Localizable.strings */; };
 		33016F291C92D206003E8F7C /* HBLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33016F281C92D206003E8F7C /* HBLanguage.m */; };
-		331B92E81C9A5B4300395A72 /* TradingRecordyViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 331B92E71C9A5B4300395A72 /* TradingRecordyViewController.plist */; };
 		333F78491C912A18000B7638 /* HomeFunctionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F78471C912A18000B7638 /* HomeFunctionsCell.m */; };
 		333F784A1C912A18000B7638 /* HomeFunctionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333F78481C912A18000B7638 /* HomeFunctionsCell.xib */; };
 		333F784D1C913148000B7638 /* HBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F784C1C913148000B7638 /* HBButton.m */; };
@@ -44,7 +43,15 @@
 		334E10301C966AC000345503 /* UIActionSheet+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E102F1C966AC000345503 /* UIActionSheet+MKBlockAdditions.m */; };
 		334E10341C966ADE00345503 /* NSObject+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E10331C966ADE00345503 /* NSObject+MKBlockAdditions.m */; };
 		334E10371C96899F00345503 /* UIButton+Alignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E10361C96899F00345503 /* UIButton+Alignment.m */; };
-		334E103A1C96BAA500345503 /* HBWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334E10391C96BAA500345503 /* HBWebBrowserViewController.m */; };
+		336A6BF11C9B91AF0059903E /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 336A6BF01C9B91AF0059903E /* zbar-help.html */; };
+		336A6BFA1C9B98850059903E /* hjbprotocol.html in Resources */ = {isa = PBXBuildFile; fileRef = 336A6BF91C9B98850059903E /* hjbprotocol.html */; };
+		336A6C031C9BD7E70059903E /* HBWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336A6C021C9BD7E70059903E /* HBWebBrowserViewController.m */; };
+		336A6C061C9BD80E0059903E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336A6C051C9BD80E0059903E /* WebViewController.m */; };
+		336A6C091C9BE57F0059903E /* trvcharge.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336A6C071C9BE57F0059903E /* trvcharge.plist */; };
+		336A6C0A1C9BE57F0059903E /* trvrecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336A6C081C9BE57F0059903E /* trvrecord.plist */; };
+		336A6C0D1C9BECE00059903E /* AccountLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336A6C0C1C9BECE00059903E /* AccountLockViewController.m */; };
+		336A6C0F1C9BED170059903E /* acclv.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336A6C0E1C9BED170059903E /* acclv.plist */; };
+		336A6C121C9BF4550059903E /* SwitchTablewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336A6C111C9BF4550059903E /* SwitchTablewCell.m */; };
 		336DC5191C92800400766E00 /* UIView+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 336DC5161C92800400766E00 /* UIView+Tools.m */; };
 		336DC51A1C92800400766E00 /* UIView+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 336DC5181C92800400766E00 /* UIView+Transition.m */; };
 		336DC51D1C92939500766E00 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 336DC51C1C92939500766E00 /* LoginModel.m */; };
@@ -141,7 +148,6 @@
 		33016F1D1C92D02F003E8F7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		33016F271C92D206003E8F7C /* HBLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLanguage.h; sourceTree = "<group>"; };
 		33016F281C92D206003E8F7C /* HBLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLanguage.m; sourceTree = "<group>"; };
-		331B92E71C9A5B4300395A72 /* TradingRecordyViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TradingRecordyViewController.plist; sourceTree = "<group>"; };
 		331B92E91C9A5C6900395A72 /* cellstruct.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = cellstruct.css; sourceTree = "<group>"; };
 		333F78461C912A18000B7638 /* HomeFunctionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeFunctionsCell.h; sourceTree = "<group>"; };
 		333F78471C912A18000B7638 /* HomeFunctionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeFunctionsCell.m; sourceTree = "<group>"; };
@@ -200,8 +206,19 @@
 		334E10331C966ADE00345503 /* NSObject+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		334E10351C96899F00345503 /* UIButton+Alignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Alignment.h"; sourceTree = "<group>"; };
 		334E10361C96899F00345503 /* UIButton+Alignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Alignment.m"; sourceTree = "<group>"; };
-		334E10381C96BAA500345503 /* HBWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBWebBrowserViewController.h; sourceTree = "<group>"; };
-		334E10391C96BAA500345503 /* HBWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBWebBrowserViewController.m; sourceTree = "<group>"; };
+		336A6BF01C9B91AF0059903E /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		336A6BF91C9B98850059903E /* hjbprotocol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hjbprotocol.html; sourceTree = "<group>"; };
+		336A6C011C9BD7E70059903E /* HBWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBWebBrowserViewController.h; sourceTree = "<group>"; };
+		336A6C021C9BD7E70059903E /* HBWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBWebBrowserViewController.m; sourceTree = "<group>"; };
+		336A6C041C9BD80E0059903E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		336A6C051C9BD80E0059903E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		336A6C071C9BE57F0059903E /* trvcharge.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = trvcharge.plist; sourceTree = "<group>"; };
+		336A6C081C9BE57F0059903E /* trvrecord.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = trvrecord.plist; sourceTree = "<group>"; };
+		336A6C0B1C9BECE00059903E /* AccountLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLockViewController.h; sourceTree = "<group>"; };
+		336A6C0C1C9BECE00059903E /* AccountLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLockViewController.m; sourceTree = "<group>"; };
+		336A6C0E1C9BED170059903E /* acclv.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = acclv.plist; sourceTree = "<group>"; };
+		336A6C101C9BF4550059903E /* SwitchTablewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTablewCell.h; sourceTree = "<group>"; };
+		336A6C111C9BF4550059903E /* SwitchTablewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTablewCell.m; sourceTree = "<group>"; };
 		336DC5151C92800400766E00 /* UIView+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tools.h"; sourceTree = "<group>"; };
 		336DC5161C92800400766E00 /* UIView+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tools.m"; sourceTree = "<group>"; };
 		336DC5171C92800400766E00 /* UIView+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Transition.h"; sourceTree = "<group>"; };
@@ -389,6 +406,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		336A6BED1C9B8D6D0059903E /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				336A6BF91C9B98850059903E /* hjbprotocol.html */,
+				336A6BF01C9B91AF0059903E /* zbar-help.html */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		3389A4EE1C8FD52200BA2B74 = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +436,7 @@
 		3389A4F91C8FD52200BA2B74 /* hjb */ = {
 			isa = PBXGroup;
 			children = (
+				336A6BED1C9B8D6D0059903E /* resource */,
 				3389A99B1C8FDB1A00BA2B74 /* controllers */,
 				3389A99C1C8FDB1A00BA2B74 /* extention */,
 				3389A5111C8FD88700BA2B74 /* helper */,
@@ -494,8 +521,6 @@
 				3389A7AB1C8FD88A00BA2B74 /* RKTabView */,
 				3389AA3A1C901A7700BA2B74 /* XYRuntime.h */,
 				3389AA3B1C901A7700BA2B74 /* XYRuntime.m */,
-				334E10381C96BAA500345503 /* HBWebBrowserViewController.h */,
-				334E10391C96BAA500345503 /* HBWebBrowserViewController.m */,
 				33CB85A91C9AB0D7003D2D75 /* CountDownButton.h */,
 				33CB85AA1C9AB0D7003D2D75 /* CountDownButton.m */,
 			);
@@ -682,6 +707,8 @@
 				3389A9EE1C90192100BA2B74 /* Base */,
 				3389A9A71C90182E00BA2B74 /* HomeViewController.h */,
 				3389A9A81C90182E00BA2B74 /* HomeViewController.m */,
+				336A6C041C9BD80E0059903E /* WebViewController.h */,
+				336A6C051C9BD80E0059903E /* WebViewController.m */,
 				334A33F01C97FB5F00DC8C3F /* CashierDeskViewController.h */,
 				334A33F11C97FB5F00DC8C3F /* CashierDeskViewController.m */,
 				33CB85A41C9A8B20003D2D75 /* ChangeMSecureViewController.h */,
@@ -691,9 +718,13 @@
 				33B3AD651C99157E00E4486A /* YYJBPayInfoViewController.m */,
 				334A33DB1C97E40700DC8C3F /* MyAccountViewController.h */,
 				334A33DC1C97E40700DC8C3F /* MyAccountViewController.m */,
+				336A6C0B1C9BECE00059903E /* AccountLockViewController.h */,
+				336A6C0C1C9BECE00059903E /* AccountLockViewController.m */,
+				336A6C0E1C9BED170059903E /* acclv.plist */,
 				334A33ED1C97EE0A00DC8C3F /* TradingRecordyViewController.h */,
 				334A33EE1C97EE0A00DC8C3F /* TradingRecordyViewController.m */,
-				331B92E71C9A5B4300395A72 /* TradingRecordyViewController.plist */,
+				336A6C071C9BE57F0059903E /* trvcharge.plist */,
+				336A6C081C9BE57F0059903E /* trvrecord.plist */,
 				334A33D01C97A6F000DC8C3F /* YYCommissionViewController.h */,
 				334A33D11C97A6F000DC8C3F /* YYCommissionViewController.m */,
 				334A33D31C97AC1C00DC8C3F /* YYJBViewController.h */,
@@ -747,6 +778,8 @@
 		3389A9EE1C90192100BA2B74 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				336A6C011C9BD7E70059903E /* HBWebBrowserViewController.h */,
+				336A6C021C9BD7E70059903E /* HBWebBrowserViewController.m */,
 				3389AA4A1C901F2B00BA2B74 /* HBNavigationbar.h */,
 				3389AA4B1C901F2B00BA2B74 /* HBNavigationbar.m */,
 				3389AA4C1C901F2B00BA2B74 /* BaseCollectionViewCell.h */,
@@ -785,6 +818,8 @@
 				3389AA281C9019E400BA2B74 /* ProtocolKit.h */,
 				3389AA291C9019E400BA2B74 /* BaseTableViewCell.h */,
 				3389AA2A1C9019E400BA2B74 /* BaseTableViewCell.m */,
+				336A6C101C9BF4550059903E /* SwitchTablewCell.h */,
+				336A6C111C9BF4550059903E /* SwitchTablewCell.m */,
 				785DA6861C9AE05300D4E881 /* LeftRightUpDownLabelCell.h */,
 				785DA6871C9AE05300D4E881 /* LeftRightUpDownLabelCell.m */,
 			);
@@ -841,6 +876,7 @@
 				3389A4F41C8FD52200BA2B74 /* Frameworks */,
 				3389A4F51C8FD52200BA2B74 /* Resources */,
 				3C750065BAEE5238F872A261 /* Copy Pods Resources */,
+				263B6547910EFB43A4843F02 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -893,6 +929,8 @@
 				33B3AD6B1C99161400E4486A /* YYJBInfoHeaderCell.xib in Resources */,
 				33CB85A81C9A8B43003D2D75 /* cmsvc.plist in Resources */,
 				333F78541C916E11000B7638 /* Default@2x.png in Resources */,
+				336A6BFA1C9B98850059903E /* hjbprotocol.html in Resources */,
+				336A6C0A1C9BE57F0059903E /* trvrecord.plist in Resources */,
 				334A33EC1C97E87900DC8C3F /* MyAccountChargeCell.xib in Resources */,
 				333F784A1C912A18000B7638 /* HomeFunctionsCell.xib in Resources */,
 				3389A50A1C8FD52200BA2B74 /* LaunchScreen.storyboard in Resources */,
@@ -902,11 +940,13 @@
 				3389AA591C902A4300BA2B74 /* HomeHeaderCell.xib in Resources */,
 				3389A5071C8FD52200BA2B74 /* Assets.xcassets in Resources */,
 				334A33E21C97E44D00DC8C3F /* MyAccountHeaderCell.xib in Resources */,
+				336A6C0F1C9BED170059903E /* acclv.plist in Resources */,
+				336A6C091C9BE57F0059903E /* trvcharge.plist in Resources */,
 				333F785E1C917CBF000B7638 /* LoginViewController.xib in Resources */,
 				334A33F71C97FBCB00DC8C3F /* CashierDeskHeaderCell.xib in Resources */,
 				333F78551C916E11000B7638 /* Default-568h@2x.png in Resources */,
-				331B92E81C9A5B4300395A72 /* TradingRecordyViewController.plist in Resources */,
 				33016F151C92CEA1003E8F7C /* Localizable.strings in Resources */,
+				336A6BF11C9B91AF0059903E /* zbar-help.html in Resources */,
 				334E102A1C96576000345503 /* PhoneRechargeViewController.xib in Resources */,
 				336DC5341C92C09C00766E00 /* QBChargeViewController.xib in Resources */,
 				336DC52B1C92B2BE00766E00 /* YBChargeViewController.xib in Resources */,
@@ -916,6 +956,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		263B6547910EFB43A4843F02 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3C750065BAEE5238F872A261 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -954,6 +1009,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3389A5021C8FD52200BA2B74 /* RootViewController.m in Sources */,
+				336A6C0D1C9BECE00059903E /* AccountLockViewController.m in Sources */,
 				3389AA351C9019E400BA2B74 /* BaseTableViewCell.m in Sources */,
 				3389AA391C901A3C00BA2B74 /* UIViewAdditions.m in Sources */,
 				33B3AD6E1C9941AB00E4486A /* NSString+Addition.m in Sources */,
@@ -962,7 +1018,7 @@
 				3389AA341C9019E400BA2B74 /* PKProtocolExtension.m in Sources */,
 				3389AA431C901B1000BA2B74 /* PengGifRefresh.m in Sources */,
 				3389A9891C8FDA1A00BA2B74 /* YYCache.m in Sources */,
-				334E103A1C96BAA500345503 /* HBWebBrowserViewController.m in Sources */,
+				336A6C031C9BD7E70059903E /* HBWebBrowserViewController.m in Sources */,
 				3389AA301C9019E400BA2B74 /* BaseViewControllerProtocol.m in Sources */,
 				3389AA581C902A4300BA2B74 /* HomeHeaderCell.m in Sources */,
 				334A33D21C97A6F000DC8C3F /* YYCommissionViewController.m in Sources */,
@@ -1001,6 +1057,7 @@
 				3389A9A91C90182E00BA2B74 /* HomeViewController.m in Sources */,
 				334E10291C96576000345503 /* PhoneRechargeViewController.m in Sources */,
 				333F78501C916B2D000B7638 /* HBImageViewCell.m in Sources */,
+				336A6C121C9BF4550059903E /* SwitchTablewCell.m in Sources */,
 				334E10371C96899F00345503 /* UIButton+Alignment.m in Sources */,
 				3389A7F71C8FD88A00BA2B74 /* GlobalData.m in Sources */,
 				3389AA461C901C5A00BA2B74 /* HBSignalBus.m in Sources */,
@@ -1039,6 +1096,7 @@
 				3389A98B1C8FDA1A00BA2B74 /* YYKVStorage.m in Sources */,
 				33B3AD711C994BB100E4486A /* TextFieldCell.m in Sources */,
 				3389A9391C8FD88A00BA2B74 /* YTKKeyValueStore.m in Sources */,
+				336A6C061C9BD80E0059903E /* WebViewController.m in Sources */,
 				3389A7FD1C8FD88A00BA2B74 /* HBActiveObject.m in Sources */,
 				3389A9941C8FDA1A00BA2B74 /* YYFrameImage.m in Sources */,
 				336DC51A1C92800400766E00 /* UIView+Transition.m in Sources */,

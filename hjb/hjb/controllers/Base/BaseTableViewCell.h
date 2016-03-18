@@ -21,10 +21,6 @@ static NSString * key_cellstruct_detailuifont = @"key_cellstruct_detailuifont";
 static NSString * key_cellstruct_titleuicolor = @"key_cellstruct_titleuicolor";
 static NSString * key_cellstruct_titleuifont = @"key_cellstruct_titleuifont";
 
-@protocol BaseTableViewCellProtol 
--(UIButton *)hb_AcessoryButton:(BaseTableViewCell *)cell;
-@end
-
-@interface BaseTableViewCell : HBBaseTableViewCell<BaseTableViewCellProtol>
-@property(nonatomic,strong) UIButton * AcessoryButton;
+@interface BaseTableViewCell : HBBaseTableViewCell<PENGCellProtocol>
+@property(nonatomic,strong) UIControl * AcessoryButton;
 @end

@@ -14,10 +14,43 @@
 @protocol PENGCellProtocol <NSObject>
 
 @optional
+/**
+ *  子CELL点击事件传出的代理
+ *
+ *  @param view    cell本身
+ *  @param subview 触发源
+ *  @param tag     触发标志
+ */
 -(void)hbtableViewCell:(BaseTableViewCell *)cell subView:(UIView *)view TapWithTag:(NSInteger)Tag;
 
+/**
+ *  子CELL点击事件传出的代理
+ *
+ *  @param view    cell本身
+ *  @param subview 触发源
+ *  @param object  带出的参数
+ */
+-(void)PENGView:(UIView *)view subView:(UIView *)subview TapWithObject:(id)object;
 
+/**
+ *  子CELL点击事件传出的代理
+ *
+ *  @param view    cell本身
+ *  @param subview 触发源
+ *  @param tag     触发标志
+ */
 -(void)PENGView:(UIView *)view subView:(UIView *)subview TapWithTag:(NSInteger)Tag;
+
+
+
+/**
+ *  右边AcessoryView替代方案
+ *
+ *  @param cell cell
+ *
+ *  @return 返回UIControl
+ */
+-(UIControl *)hb_AcessoryButton:(BaseTableViewCell *)cell;
 @end
  
 //发送CELL 里面的View的点击事件出去

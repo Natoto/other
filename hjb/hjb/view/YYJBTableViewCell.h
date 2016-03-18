@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseTableViewCell.h"
-@interface YYJBTableViewCell : BaseTableViewCell
-
+@interface YYJBTableViewCell : BaseTableViewCell<PENGCellProtocol>
 @end

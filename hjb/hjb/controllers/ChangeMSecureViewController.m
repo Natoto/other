@@ -12,7 +12,7 @@
 #import "CountDownButton.h"
 #import "HBLabelCell.h"
 #import "UIAlertView+MKBlockAdditions.h"
-@interface ChangeMSecureViewController ()<BaseTableViewCellProtol>
+@interface ChangeMSecureViewController ()<PENGCellProtocol>
 AS_CELL_STRUCT_COMMON(curphone)
 
 @property (strong, nonatomic) CountDownButton *dynamicPasswordButton;

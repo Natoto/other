@@ -12,27 +12,6 @@
 @end
 @implementation BaseTableViewCell
 
-//-(UIButton *)hb_AcessoryButton:(BaseTableViewCell *)cell
-//{
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(hb_AcessoryButton:)]) {
-//        _AcessoryButton = [self.delegate hb_AcessoryButton:self];
-//        return [self.delegate hb_AcessoryButton:self];
-//    }
-//    return self.AcessoryButton;
-//}
-
--(void)setcellRightValue:(NSString *)value
-{
-    if (value.length) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(hb_AcessoryButton:)]) {
-            _AcessoryButton = [self.delegate hb_AcessoryButton:self];
-        }
-        if (self.AcessoryButton) {
-            [self.AcessoryButton setTitle:value forState:UIControlStateNormal];
-            self.accessoryView = self.AcessoryButton;
-        }
-    }
-}
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -43,6 +22,24 @@
     }
     return self;
 }
+
+-(void)setcellRightValue:(NSString *)value
+{
+    if (value.length) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(hb_AcessoryButton:)]) {
+            UIControl * control = [self.delegate hb_AcessoryButton:self];
+            _AcessoryButton = control;
+        }
+        if (self.AcessoryButton) {
+            if ([[self.AcessoryButton class] isSubclassOfClass:[UIButton class]]) {
+                UIButton * btn = (UIButton *)self.AcessoryButton;
+                [btn setTitle:value forState:UIControlStateNormal];
+            }
+            self.accessoryView = self.AcessoryButton;
+        }
+    }
+}
+
 -(void)setcellProfile:(NSString *)profile
 {
     if (!profile) {
@@ -58,26 +55,7 @@
 
 -(void)setcelldictionary:(NSMutableDictionary *)dictionary
 {
-    [super setcelldictionary:dictionary];
-//    
-//    UIFont * titlefont = [dictionary objectForKey:key_cellstruct_titleuifont];
-//    if (titlefont && [[titlefont class] isSubclassOfClass:[UIFont class]]) {
-//        self.textLabel.font = titlefont;
-//    }
-//    
-//    UIColor * titlecolor = [dictionary objectForKey:key_cellstruct_titleuicolor];
-//    if (titlecolor && [[titlecolor class] isSubclassOfClass:[UIColor class]]) {
-//        self.textLabel.textColor = titlecolor;
-//    }
-//    UIFont * detailfont = [dictionary objectForKey:key_cellstruct_detailuifont];
-//    if (detailfont && [[detailfont class] isSubclassOfClass:[UIFont class]]) {
-//        self.detailTextLabel.font = detailfont;
-//    }
-//    
-//    UIColor * detailcolor = [dictionary objectForKey:key_cellstruct_detailuicolor];
-//    if (detailcolor && [[detailcolor class] isSubclassOfClass:[UIColor class]]) {
-//        self.detailTextLabel.textColor = detailcolor;
-//    }
+    [super setcelldictionary:dictionary]; 
     //----- from plist string --------
     NSNumber * titlefontsize = [dictionary objectForKey:key_cellstruct_titleuifont];
     if (titlefontsize && [[titlefontsize class] isSubclassOfClass:[NSNumber class]]) {
@@ -105,14 +83,19 @@
 
 -(UIButton *)AcessoryButton
 {
+    UIButton * button;
     if (!_AcessoryButton) {
-        UIButton * button = [UIButton  buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(0, 0, 80, 25);
+        button = [UIButton  buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(0, 0, 70, 25);
         [button setTitle:@"已关注" forState:UIControlStateSelected];
-        [button.titleLabel setFont:[UIFont systemFontOfSize:12] ];
+        [button.titleLabel setFont:[UIFont systemFontOfSize:13] ];
         [button setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         _AcessoryButton = button;
     }
-    return _AcessoryButton;
+    else
+    {
+        button = (UIButton *)_AcessoryButton ;
+    }
+    return button;
 }
 @end

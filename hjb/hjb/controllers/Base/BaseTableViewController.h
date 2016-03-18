@@ -9,13 +9,13 @@
 #import <HBKit/HBKit.h>
 #import "BaseViewController.h"
 #import "BaseViewControllerProtocol.h"
-
+#import "PENGProtocol.h"
 
 #define TABLEVIEW_REGISTER_CELLCLASS(TABLEVIEW,CELLCLSSTR) {[TABLEVIEW registerClass:NSClassFromString(CELLCLSSTR) forCellReuseIdentifier:CELLCLSSTR];}
 
 static NSString * key_cellstruct_sectionbguicolor = @"key_cellstruct_sectionuicolor";
 
-@interface BaseTableViewController : HBBaseTableViewController<BaseViewControllerProtocol>
+@interface BaseTableViewController : HBBaseTableViewController<PENGCellProtocol,BaseViewControllerProtocol>
 //@property(nonatomic,retain) HBNavigationbar * navigationbar;
 //@property(nonatomic,retain) HBNavigationbar * navigationtoolsbar;
 

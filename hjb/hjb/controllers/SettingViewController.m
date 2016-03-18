@@ -42,6 +42,10 @@ GET_CELL_SELECT_ACTION(cellstruct)
     if ([cellstruct.title isEqualToString:@"修改密保手机"]) {
         [self openURLString:@"ChangeMSecureViewController" forkey:@"ChangeMSecureViewController" parameters:nil];
     }
+    else if([cellstruct.title isEqualToString:@"账号锁"])
+    {
+        [self openURLString:@"AccountLockViewController" forkey:@"AccountLockViewController" parameters:nil];
+    }
 } 
 
 - (void)didReceiveMemoryWarning {

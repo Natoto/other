@@ -10,6 +10,7 @@
 #import "YYJBTableViewCell.h"
 #import "UIImage+Tint.h"
 #import <Masonry/Masonry.h>
+#import "WebViewController.h"
 
 @interface YYJBViewController ()
 
@@ -28,6 +29,7 @@
     self.title = @"一元聚宝";
     [self configToolbar];
     [self.tableView setContentInset:UIEdgeInsetsMake(HEIGHT_NAVIGATIONBAR, 0, HEIGHT_NAVIGATIONBAR, 0)];
+ 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,9 +39,8 @@
 
 GET_CELL_SELECT_ACTION(cellstruct)
 {
-    [self openURLString:@"YYJBPayInfoViewController" forkey:@"YYJBPayInfoViewController" parameters:nil];
+    
 }
-
 
 -(void)configToolbar
 {
@@ -55,17 +56,27 @@ GET_CELL_SELECT_ACTION(cellstruct)
     self.navigationtoolsbar.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
     UIButton * btn_aboutjb = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.navigationtoolsbar addSubview:btn_aboutjb];
-    [btn_aboutjb setTitle:@"关于一元聚宝" forState:UIControlStateNormal];
+    [btn_aboutjb setTitle:@" 关于一元聚宝" forState:UIControlStateNormal];
     [btn_aboutjb mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@150);
         make.top.bottom.equalTo(self.navigationtoolsbar);
     }];
     btn_aboutjb.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     
+    @weakify(self)
+    [[btn_aboutjb rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) { @strongify(self)
+        [self openHTMLURL:@"https://pay.yy.com/hjb/page/helper/about"];
+    }];
     [self.navigationtoolsbar clearTopLayer];
     [self.navigationtoolsbar clearBottomLayer];
 }
 
+
+-(void)hbtableViewCell:(BaseTableViewCell *)cell subView:(UIView *)view TapWithTag:(NSInteger)Tag
+{
+    NSLog(@"indexpath :%@",cell.indexPath);
+    [self openURLString:@"YYJBPayInfoViewController" forkey:@"YYJBPayInfoViewController" parameters:nil];
+}
 
 -(CELL_STRUCT *)createcellstruct
 {
@@ -78,15 +89,5 @@ GET_CELL_SELECT_ACTION(cellstruct)
     [cellstruct.dictionary setObject:self.view.backgroundColor forKey:key_cellstruct_background];
     return cellstruct;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
