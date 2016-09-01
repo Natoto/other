@@ -1,9 +1,10 @@
  {
-    "version": 13,
-"lastVersion":0,
-    "when": "2016-06-14",
-    "patchVersion": "43571",
-    "changes": [
-      "http://us.battle.net/heroes/en/blog/20143449"
+    "version": 14,
+    "lastVersion":13,
+    "updatedate": "2016-06-14",
+    "patchVersion": "43572",
+   "downloadurl":"https://github.com/Natoto/other/blob/39de9c96f367cea87e14bb4ce569698157f7b70b/hjbpatch/1.1/dribbble.zip?raw=true"
+     "changes": [
+      "dribble demo"
     ]
   }
